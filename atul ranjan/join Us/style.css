@@ -1,0 +1,155 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    font-size: 15px;
+    font-weight: 590;
+    line-height: 1.2;
+}
+.logo img{
+    width: 60px;
+
+}
+ul{
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+ul li{
+    
+  text-decoration: none;
+  margin: 10px;
+  list-style:none;
+
+
+}
+ul li a{
+    color: rgba(111, 107, 103, .7);
+ list-style:none;
+  text-decoration: none;
+
+}
+.search{
+    display: flex;
+    justify-content: center;
+  align-items: center;
+}
+
+
+
+
+
+
+
+
+
+.hero_image {
+    background-image: url(./assest/asset\ 9.jpeg);
+    width: 100vw;
+    height: 80vh;
+   opacity: 95%;
+   background-size: auto;
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position: center
+ 
+}
+.hero_header {
+    font-family: Garamond, serif;
+    font-size: 1.5rem;
+    position: absolute;
+    top: 30%;
+    left: 12%;
+    width: 20%;
+color: aliceblue;
+}
+.hero_header button{
+    background: #D1A272;
+    border: none;
+    color: white;
+    padding: 12px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1rem;
+    margin-top: 20px;
+}
+
+
+/* ::::::::::::::::::::::who we are:::::::::::::::::::::::: */
+#who_we{
+    background-color: #ffeded;
+
+}
+.who_we_p p{
+    position: relative;
+    right: 1%;
+    text-align: center;
+    columns: red;
+}
+.heading{
+    text-align: center;
+}
+.heading h3{
+    margin-bottom: 20px;
+    font-size: 35px;
+    font-family: 'EB Garamond', serif;
+    font-weight: 400;
+    font-style: italic;
+    color: #D1A272;
+    line-height: 1.2;
+}
+.heading h1{
+    color: #D1A272;
+    line-height: 1.2;
+}
+#who_we ul{
+    position: absolute;
+    left: 35%;
+    display: flex;
+    flex-direction: column;
+}
+/* :::::::::::::::::::::::::::::::::::::::::Dabur Principles:::::::::::::::::::::::::::::::::::: */
+#principles{
+
+}
+.principles_heading {
+color: rebeccapurple;
+text-align: center;
+font-size: 2rem;
+
+
+}
+.principles_box{
+    display: flex;
+    justify-items: center;
+    align-items: center;
+}
+.principles_box_content h4{
+    color: #D1A272;
+    text-align: center;
+    font-size: 2rem;
+
+}
+.principles_box_content p{
+    padding-top: 10%;
+  width: 80%;
+  margin: auto;
+
+}
+.principles_box_image{
+    width: 60%;
+    position: relative;
+    
+   
+
+}
+.principles_box_image img{
+    width: 90%;
+
+}
