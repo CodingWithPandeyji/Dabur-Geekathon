@@ -1,0 +1,98 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Nunito Sans", sans-serif;
+}
+/* // <uniquifier>: Use a unique and descriptive class name */
+
+/* .eb-garamond {
+  font-family: "EB Garamond", serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+} */
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* padding: 0px 4rem; */
+  padding: 1.5rem 5rem;
+}
+
+nav ul {
+  display: flex;
+}
+nav ul a {
+  padding: 0px 0.6rem;
+  font-size: 21px;
+  font-family: "EB Garamond", serif;
+  font-weight: 500;
+}
+
+nav ul .same {
+  /* color: #7E7A77; */
+  color: rgba(111, 107, 103, 0.7);
+  font-weight: 500;
+}
+
+nav ul .globe {
+  color: #d1a272;
+  font-size: 18px;
+}
+
+nav ul .arogya {
+  font-size: 15px;
+}
+.navigationBar {
+  width: 100%;
+  height: 4rem;
+  background-color: #f4f4f5;
+  display: flex;
+  align-items: center;
+  padding-left: 4rem;
+  color: #707070;
+  font-weight: 300;
+  position: relative;
+}
+
+.navigationBar a {
+  text-decoration: none;
+  color: #5989bb;
+  margin-right: 0.5rem;
+  font-weight: 300;
+}
+.navigationBar span {
+  color: #cccdd1;
+  margin-right: 0.5rem;
+}
+
+.banner {
+  width: 100vw;
+}
+.bannerImage {
+  width: 100vw;
+}
+.bannerHead {
+  color: #6f6b67;
+  font-family: "EB Garamond", serif;
+  font-size: 4rem;
+  font-weight: 600;
+  position: absolute;
+  top: 38%;
+  left: 8%;
+}
