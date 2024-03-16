@@ -1,0 +1,71 @@
+.two p{
+    letter-spacing: 0.32px;
+    color: #707070;
+    text-transform: uppercase;
+    opacity: 1;
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 500;
+    line-height: 1.1;
+    margin-top: 15px;
+    text-align: center;
+
+}
+.two h3{
+    font-size: 24px;
+    line-height: 1.1;
+    font-family: 'EB Garamond', serif;
+    font-size: 35px;
+    font-weight: 500;
+    line-height: 1.1;
+    color: #D1A272;
+    letter-spacing: 0px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+.four p{
+    letter-spacing: 0.99px;
+    color: #707070;
+    margin-top: 15px;
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 300;
+    text-align: center;
+    margin-left: 25%;
+    margin-right: 25%;
+}
+.three p{
+    letter-spacing: 0.32px;
+    color: #707070;
+    text-transform: uppercase;
+    opacity: 1;
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 500;
+    line-height: 1.1;
+    margin-top: 50px;
+    text-align: center;
+
+}
+.three h3{
+    font-size: 24px;
+    line-height: 1.1;
+    font-family: 'EB Garamond', serif;
+    font-size: 35px;
+    font-weight: 500;
+    line-height: 1.1;
+    color: #D1A272;
+    letter-spacing: 0px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+.three button{
+    height: 42px;
+    font-size: 16px;
+    padding: 6px 20px;
+    font-weight: 300;
+    color: #707070;
+    letter-spacing: 0px;
+    border: 1px solid #D1A272;
+    border-radius: 0px;
+    box-shadow: none;
+    align-items: center;
+    margin-left:auto;
+}
