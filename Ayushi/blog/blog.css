@@ -86,21 +86,24 @@ nav ul .arogya {
 } */
 .bannerImage {
   width: 100%;
+  position: relative;
 }
 .bannerHead {
+  width: 30%;
+  margin: 20px 0 30px;
   color: #6f6b67;
   font-family: "EB Garamond", serif;
   font-size: 62px;
   font-weight: 500;
   position: absolute;
-  top: 38%;
-  left: 8%;
+  top: 35%;
+  left: 7%;
 }
 
 /* Section 2 */
 
 .section2 {
-  padding: 5rem 6rem;
+  padding: 3rem 6rem;
 }
 
 .sectionTitle {
@@ -121,10 +124,10 @@ nav ul .arogya {
 }
 
 .cards {
+  width: 95%;
   display: flex;
   margin: 0 auto;
-  /* justify-content: center; */
-  gap: 3rem;
+  gap: 2rem;
   flex-wrap: wrap;
   margin-top: 4rem;
 }
@@ -159,9 +162,9 @@ nav ul .arogya {
   height: 1.5rem;
   border-left: 2px solid #d1a272;
   transition: transform 0.4s ease-in;
+  width: 70px;
 }
 .pipe div {
-  width: 22px;
   height: 100%;
 }
 
@@ -194,8 +197,7 @@ nav ul .arogya {
 }
 
 .card:hover .pipe {
-  transform: rotateZ(-90deg);
-  left: 15px;
+  transform: matrix(1, 0, 0, 1, 0, -10) rotateZ(-90deg);
   bottom: 0;
 }
 
@@ -373,4 +375,152 @@ nav ul .arogya {
   height: 50px;
   color: white;
   background-color: #d1a272;
+}
+@media screen and (max-width: 1536px) {
+  .card > img {
+    width: 280px;
+  }
+}
+@media screen and (max-width: 1500px) {
+  .bannerHead {
+    font-size: 52px;
+  }
+}
+@media screen and (max-width: 1472px) {
+  .card > img {
+    width: 270px;
+  }
+  .section2,
+  .section4,
+  .section5 {
+    padding: 3rem;
+  }
+}
+
+@media screen and (max-width: 1366px) {
+  .bannerHead {
+    font-size: 32px;
+  }
+}
+
+@media screen and (max-width: 1334px) {
+  .section2,
+  .section4,
+  .section5 {
+    padding: 2rem;
+  }
+  .card > img {
+    width: 260px;
+  }
+}
+
+@media screen and (max-width: 1240px) {
+  .card > img {
+    width: 240px;
+  }
+  .cards {
+    gap: 1.5rem;
+  }
+  .card {
+    margin-bottom: 3rem;
+  }
+}
+@media screen and (max-width: 1151px) {
+  .card > img {
+    width: 225px;
+  }
+}
+
+@media screen and (max-width: 1101px) {
+  .card > img {
+    width: 215px;
+  }
+  .card .discoverMore {
+    opacity: 1;
+    font-size: 15px;
+  }
+  .discoverMore img {
+    width: 40px;
+  }
+  .discription {
+    font-size: 13px;
+  }
+  .pipe {
+    height: 1rem;
+
+    transform: rotateZ(-90deg);
+    left: 6px;
+    bottom: 0;
+  }
+  .card {
+    box-shadow: 0 3px 25px rgba(0, 0, 0, 0.16);
+  }
+}
+@media screen and (max-width: 1046px) {
+  .card > img {
+    width: 210px;
+  }
+}
+@media screen and (max-width: 1046px) {
+  .card > img {
+    width: 200px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .section2,
+  .section4,
+  .section5 {
+    padding: 2rem 5rem;
+  }
+  .card > img {
+    width: 300px;
+  }
+  .cards {
+    /* width: 100%; */
+    gap: 0;
+    justify-content: space-around;
+  }
+}
+
+@media screen and (max-width: 836px) {
+  .section2,
+  .section4,
+  .section5 {
+    padding: 2rem 4rem;
+  }
+}
+@media screen and (max-width: 767px) {
+  .bannerHead {
+    width: 100%;
+    position: relative;
+    left: 0;
+    text-align: center;
+    font-size: 28px;
+    font-weight: 400;
+  }
+  .section2,
+  .section4,
+  .section5 {
+    padding: 2rem 3rem;
+  }
+  .card > img {
+    width: 270px;
+  }
+}
+
+@media screen and (max-width: 674px) {
+  .section2,
+  .section4,
+  .section5 {
+    padding: 2rem;
+  }
+}
+
+@media screen and (max-width: 633px) {
+  .section2,
+  .section4,
+  .section5 {
+    padding: 2rem 1rem;
+  }
 }

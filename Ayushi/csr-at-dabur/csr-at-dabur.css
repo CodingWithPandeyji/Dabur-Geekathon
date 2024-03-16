@@ -12,8 +12,6 @@
 html,
 body,
 section {
-  width: 100vw;
-  height: 100%;
   /* overflow-x: hidden; */
 }
 
@@ -89,14 +87,15 @@ nav ul .arogya {
   width: 100%;
 }
 .bannerHead {
-  width: 350px;
+  width: 30%;
+  margin: 20px 0 30px;
   color: #6f6b67;
   font-family: "EB Garamond", serif;
   font-size: 62px;
   font-weight: 500;
   position: absolute;
-  top: 38%;
-  left: 8%;
+  top: 35%;
+  left: 7%;
 }
 .padding {
   padding: 5rem;
@@ -138,8 +137,8 @@ nav ul .arogya {
 }
 
 .section2 img {
-  margin: 10px 50%;
-  transform: translateX(-50%);
+  display: block;
+  margin: 0 auto;
 }
 
 .sectionMatrix {
@@ -241,9 +240,9 @@ nav ul .arogya {
   height: 1.5rem;
   border-left: 2px solid #d1a272;
   transition: transform 0.4s ease-in;
+  width: 70px;
 }
 .pipe div {
-  width: 22px;
   height: 100%;
 }
 
@@ -285,7 +284,6 @@ nav ul .arogya {
 }
 
 .card:hover .pipe {
-  transform: rotateZ(-90deg);
-  left: 15px;
+  transform: matrix(1, 0, 0, 1, 0, -10) rotateZ(-90deg);
   bottom: 0;
 }

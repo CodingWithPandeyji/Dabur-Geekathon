@@ -45,7 +45,7 @@
     <link rel="stylesheet" href="blog.css" />
   </head>
   <body>
-    <header>
+    <!-- <header>
       <nav>
         <img src="Images/android-icon-72x72.png" alt="" />
         <ul>
@@ -72,7 +72,7 @@
           </li>
         </ul>
       </nav>
-    </header>
+    </header> -->
 
     <main>
       <!-- section 1 -->
@@ -86,9 +86,21 @@
         <!-- banner image -->
 
         <div class="banner">
-          <img class="bannerImage" src="Images/Blog-2.jpg" alt="" />
-          <h1 class="bannerHead">Blog</h1>
+          <picture
+            ><source
+              srcset="
+                https://www.dabur.com/sites/default/files/2021-10/Blog-2.jpg
+              "
+              media="(min-width: 800px)" />
+            <source
+              srcset="
+                https://www.dabur.com/sites/default/files/2021-10/Blog-2_0.jpg
+              "
+              media="(min-width: 300px)" />
+            <img src="Images/Blog-2.jpg" class="bannerImage" alt=""
+          /></picture>
         </div>
+        <h1 class="bannerHead">Blog</h1>
       </section>
 
       <!-- section 2 -->
@@ -131,7 +143,7 @@
                 <div></div>
               </span>
 
-              <div>AYURVEDIC DAILY ROUTINE</div>
+              <div>DAILY ROUTINE</div>
             </div>
             <div class="discoverMore">
               <a href="#" class="link">Discover more</a>
