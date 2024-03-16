@@ -194,9 +194,9 @@ nav ul .arogya {
 }
 
 .card:hover .pipe {
+  transform: rotateZ(-90deg);
   left: 15px;
   bottom: 0;
-  transform: rotateZ(-90deg);
 }
 
 /* section 3 */
@@ -258,27 +258,29 @@ nav ul .arogya {
 .slider-container {
   margin-top: 5rem;
 }
+.slider-wrapper {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  overflow-y: hidden;
+  overflow-x: scroll;
+  display: grid;
+  /* grid-auto-columns: 1fr; */
+  gap: 50px;
+  grid-auto-flow: column;
+}
+.slider-wrapper::-webkit-scrollbar {
+  height: 0px;
+  background-color: #aaa;
+  border-radius: 5px;
+}
+
+.slider {
+  width: 300px;
+}
 .image-container {
   position: relative;
 }
-/* .section4 .swiper {
-  width: 95%;
-} */
 
-.slider-container .slide-content .slider-wrapper {
-  padding-bottom: 2rem;
-  padding-left: 1rem;
-  padding-right: 1rem;
-}
-
-/* .slider-container .slide-content .slider-wrapper .slider {
-  width: 300px;
-} */
-.slider-container .swiper-button-next,
-.slider-container .swiper-button-prev {
-  color: #d1a272;
-  transform: translateY(-70%);
-}
 .floatingContent {
   background-color: #d1a2727e;
   color: white;
@@ -289,7 +291,7 @@ nav ul .arogya {
   top: 10px;
 }
 .image-container img {
-  width: 100%;
+  /* width: 100%; */
 }
 
 .content-container {
