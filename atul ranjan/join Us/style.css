@@ -1,45 +1,59 @@
 *{
-    margin: 0;
     padding: 0;
+    margin: 0;
     box-sizing: border-box;
+    font-family: "EB Garamond", serif;
+
 }
-nav{
-    display: flex;
-    justify-content: space-between;
-    font-size: 15px;
-    font-weight: 590;
-    line-height: 1.2;
+
+html,body{
+  width: 100%;
+  height: 100%;
+  font-family: 'Nunito Sans', sans-serif;
 }
-.logo img{
-    width: 60px;
+
+a{
+    text-decoration: none;
 
 }
 ul{
-    
+    list-style: none;
+}
+
+nav{
     display: flex;
+    justify-content: space-between;
     align-items: center;
-    justify-content: center;
+    padding: 0px 5rem;
+    padding: 1.5rem 5rem;
+   
 }
-ul li{
-    
-  text-decoration: none;
-  margin: 10px;
-  list-style:none;
 
-
-}
-ul li a{
-    color: rgba(111, 107, 103, .7);
- list-style:none;
-  text-decoration: none;
-
-}
-.search{
+nav ul{
     display: flex;
-    justify-content: center;
-  align-items: center;
+}
+nav ul a{
+    padding: 0px 0.6rem;
+    font-size: 20px;
+    font-family: "EB Garamond", serif;
+    font-weight: 200;
 }
 
+nav ul .same{
+    /* color: #7E7A77; */
+    color: rgba(111, 107, 103, .7);
+    font-weight: 500;
+    
+}
+
+nav ul .globe{
+ color:#D1A272;
+ font-size: 18px;
+}
+
+nav ul .arogya{
+    font-size: 15px;
+}
 
 
 
@@ -119,7 +133,7 @@ color: aliceblue;
 
 }
 .principles_heading {
-color: rebeccapurple;
+    color: #D1A272;
 text-align: center;
 font-size: 2rem;
 
@@ -130,7 +144,7 @@ font-size: 2rem;
     justify-items: center;
     align-items: center;
 }
-.principles_box_content h4{
+.principles_box_content h4 {
     color: #D1A272;
     text-align: center;
     font-size: 2rem;
@@ -153,3 +167,210 @@ font-size: 2rem;
     width: 90%;
 
 }
+.Principles_buttom img{
+    width: 100vw;
+    height: auto;
+
+}
+/* ::::::::::::::::::why join Dabur::::::::::::: */
+.join_heading {
+    color: #D1A272;
+    text-align: center;
+    font-size: 2rem;
+
+}
+.join_content{
+    display: flex;
+    flex-direction: column;
+    margin-left:30% ;
+    
+}
+.join_content span{
+    margin-top: 60px;
+    font-size: 2rem;
+   
+   
+
+}
+.join_content img{
+    width: 50px;
+    margin-right: 5cqmax;
+    gap: 50%; 
+ 
+}
+
+
+
+/* :::::::::::::::::::What can you expect :::::::::::::::: */
+.expect{
+    margin-top: 130px;
+    /* background-color: #f5ece4; */
+}
+.expext_heading{
+    
+    width: 50%;
+    margin: auto;
+    color: #D1A272;
+    text-align: center;
+    font-size: 2rem;
+}
+.expect_box{
+display: flex;
+width: 100vw;
+flex-wrap: wrap;
+background-color: #417e55;
+color: azure;
+}
+.expect_content{
+    width: 33%;
+  
+}
+.expect_content h5{
+   font-size: 1.2rem;
+   padding-left: 15px;
+   padding-right: 15px;
+
+
+}
+.expect_content img{
+    width: 100%;
+}
+.expect_content p{
+    padding-left: 15px;
+    padding-right: 15px;
+ 
+ }
+
+
+
+
+
+
+
+.Recruiment{
+    margin-top: 100px;
+
+}
+ .recruiment_heading{
+    width: 50%;
+    margin: auto;
+    color: #D1A272;
+    text-align: center;
+    font-size: 2rem;
+
+ }
+ .recruiment_content{
+  display: flex;
+  width:70%;
+  margin: auto;
+  align-items: center;
+  margin-bottom: 50px;
+ }
+ .step{
+    margin-right: 30px;
+ }
+ .step p{
+    text-align: center;
+ }
+ .step big{
+    color: #D1A272;
+    font-family: 'EB Garamond', serif;
+    font-weight: 600;
+    line-height: 1;
+    margin: 0;
+    font-size: 8rem;
+ }
+ .step span{
+    font-size: 28px;
+    color: #6F6B67;
+    text-transform: uppercase;
+    margin: 0;
+    line-height: normal;
+    font-family: 'EB Garamond', serif;
+    font-weight: 600;
+ }
+ .BoxText{
+    padding: 20px 30px 20px 50px;
+    background: #fff;
+    box-shadow: 0px 3px 20px #D1A27233;
+    padding: 30px 45px 30px 80px;
+    position: relative;
+ }
+ 
+ .BoxText h6{
+    padding: 20px 30px 20px 3px;
+  color: #707070;
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-family: 'EB Garamond', serif;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 1.1;
+  box-sizing: border-box;
+  text-align: justify;
+  
+ }
+
+ /* <!-- :::::::::::::::TESTIMONIALS:::::::::::::::::: --> */
+
+
+ .container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+  }
+
+  .header {
+   width: 50%;
+    margin: auto;
+    color: #D1A272;
+    text-align: center;
+    font-size: 2rem;;
+  }
+
+  .content {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .left-content,
+  .right-content {
+    flex: 1;
+    padding: 20px;
+    overflow: hidden;
+    transition: transform 0.5s ease;
+  }
+
+.right-content img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+  /* <!-- :::::::::::::::::::::::::::::opportunities::::::::::::::::::::: --> */
+  .opportunity{
+    background-image: url(assest/asset\ 33.jpeg);
+    position: relative;
+    top: 50%;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-position: center
+  
+  }
+  .opportunity_heading{
+    width: 80%;
+    margin: auto;
+  }
+  .opportunity button{
+    background: #D1A272;
+    border: none;
+    color: white;
+    padding: 12px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1rem;
+    margin-top: 20px;
+  }
