@@ -1,0 +1,558 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+h3 {
+  color: #d1a272;
+  font-family: "EB Garamond", serif;
+  font-size: 35px;
+  font-weight: 500;
+  text-align: center;
+}
+
+h4 {
+  color: #d1a272;
+  font-family: "EB Garamond", serif;
+  font-size: 28px;
+  font-weight: 500;
+}
+
+h6 {
+  color: #d1a272;
+  font-family: "EB Garamond", serif;
+
+  font-weight: 500;
+  text-align: center;
+}
+
+p {
+  color: #707070;
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+a {
+  text-decoration: none;
+}
+
+.hero {
+  width: 100vw;
+  height: 100vh;
+  background-image: url("invester/images/financial-information\ \(2\)\ 1920x750.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.content_hero {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  padding-top: 13rem;
+  padding-left: 5rem;
+}
+
+.content_hero h3 {
+  color: #707070;
+  text-align: left;
+  width: 40%;
+  font-size: 52px;
+  font-weight: 500;
+}
+
+.content_hero .tittle {
+  text-align: left;
+  color: #707070;
+  font-size: 14px;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+
+.content_hero a {
+  margin-top: 2rem;
+  width: 30%;
+  text-align: center;
+  padding: 14px 30px;
+  text-transform: capitalize;
+
+  background-color: #d1a272;
+  color: white;
+}
+
+.performance {
+  width: 100vw;
+  padding: 90px;
+  background-color: #fcfaf8;
+}
+
+.container_perf {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.container_perf h3 {
+  font-size: 28px;
+  width: 60%;
+  margin: 20px 0 30px;
+}
+
+.container_perf h6 {
+  margin: 10px 0 50px;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.content_figure {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 0.5rem;
+  text-align: center;
+}
+
+.figure {
+  border-right: 1px solid #e4dacf;
+  padding-right: 1rem;
+  padding-left: 1rem;
+}
+
+#bnone {
+  border: none;
+}
+
+.amount {
+  width: 100%;
+  display: flex;
+  gap: 0.5rem;
+  text-align: center;
+  /* border: 1px solid black; */
+}
+
+.amount span {
+  width: 100%;
+  text-align: center;
+  color: #d1a272;
+  font-family: "EB Garamond", serif;
+  font-size: 56px;
+  font-weight: 500;
+}
+
+.figure p {
+  width: 100%;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.latest_invester {
+  padding: 90px;
+}
+
+.container_lat_inv {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container_lat_inv h2 {
+  font-size: 14px;
+  color: #707070;
+  margin: 20px 0 25px;
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 400;
+
+}
+
+.container_lat_inv h1 {
+  font-size: 28px;
+  color: #d1a272;
+
+  font-family: "EB Garamond", serif;
+  font-weight: 500;
+  margin-bottom: 25px;
+}
+
+li {
+  margin-top: 0.5rem;
+}
+
+.list_meeting a {
+  margin-bottom: 10px;
+  text-decoration: none;
+  color: black;
+  font-size: 12px;
+  font-weight: 300;
+  font-family: "Nunito Sans", "serif";
+  line-height: 25px;
+}
+
+li::marker {
+  color: #d1a272;
+}
+
+li:hover {
+  text-decoration: underline;
+}
+
+.latest_lower {
+  padding: 4rem;
+  display: flex;
+  justify-content: space-between;
+  gap: 4rem;
+}
+
+.box {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 3rem;
+}
+
+.boxcontent {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+}
+
+.boxcontent p {
+  font-size: 12px;
+  font-size: 300;
+  text-align: left;
+  margin-left: 1rem;
+  margin-top: 1.5rem;
+}
+
+.boxcontent h4 {
+  color: #d1a272;
+  font-size: 28px;
+  font-weight: 500;
+  text-align: left;
+  margin-left: 1rem;
+  margin-top: 1.5rem;
+}
+
+.boxcontent h6 {
+  color: #707070;
+  font-size: 16px;
+  font-size: 300;
+  text-align: left;
+  margin-left: 1rem;
+  margin-top: 1.5rem;
+}
+
+.boxcontent img {
+  width: 350px;
+  height: 240px;
+  display: block;
+  box-shadow: 5px 5px 5px rgb(165, 162, 162);
+}
+
+.lbutton {
+  padding: 0.7rem 2.1rem;
+  margin-right: 3rem;
+  border: 1px solid #d1a272;
+  background: white;
+}
+
+.lbutton:hover {
+  background-color: #d1a272;
+  color: white;
+}
+
+.also_check {
+  padding: 5rem 5rem 10rem 5rem;
+}
+
+.graph {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.graphbox {
+  padding: 1rem;
+  width: 200px;
+  height: 160px;
+  border: 1px solid #d1a272;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.graphbox img {
+  display: block;
+  height: 71px;
+  width: 65px;
+}
+
+.graphbox h4 {
+  color: #707070;
+  font-family: "Nunito Sans", serif;
+  font-weight: 300;
+  font-size: 16px;
+}
+
+.qick_links {
+  padding: 5rem 10rem;
+}
+
+.links {
+  display: flex;
+  justify-content: space-evenly;
+
+  text-align: left;
+}
+
+.boxlinks {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: flex-start;
+  text-align: left;
+}
+
+.alinks {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.alinks a {
+  display: block;
+  text-decoration: none;
+  color: #707070;
+  font-size: 18px;
+  font-family: "EB Garamond", serif;
+  text-align: left;
+  font-weight: 500;
+  text-transform: capitalize;
+  position: relative;
+  padding-left: 0;
+  transition: all 400ms;
+}
+
+.alinks a::before {
+  content: '';
+  position: absolute;
+  width: 40px;
+  height: 2px;
+  background-color: #d1a272;
+  left: 0;
+  top: 50%;
+  display: none;
+}
+.alinks a:hover{
+  padding-left: 50px;
+}
+.alinks a:hover::before{
+  display: block;
+}
+
+.links a:hover {
+  color: #d1a272;
+}
+
+.image_boxlinks img {
+  width: 257px;
+  height: 190px;
+}
+
+.boxlinks span {
+  color: #d1a272;
+  font-family: "EB Garamond", serif;
+  font-size: 24px;
+  font-weight: 500;
+  text-align: center;
+}
+
+/****************************Responsive design ********************************/
+/* @media screen and (max-width: 1024px){
+    .content_hero .tittle{
+       margin-bottom: 20px;
+    }
+    .content_hero h3{
+        width: 30%;
+        font-size: 32px;
+    }
+    .content_hero a{
+        width: 30%;
+        padding: 11px 30px;
+    }
+
+} */
+/*************** tablet screen ************************/
+
+@media screen and (max-width: 768px) {
+  .hero {
+    background-image: url("invester/images/financial-information\ \(2\)_3\ \(768\).jpg");
+    height: 928px;
+  }
+
+  .content_hero {
+    width: 60%;
+    top: 30%;
+
+    left: 2rem;
+  }
+
+  .content_hero h3 {
+    width: 70%;
+    font-size: 32px;
+  }
+
+  .content_hero a {
+    width: 60%;
+    padding: 11px 30px;
+  }
+
+  .performance {
+    padding: 90px 20px;
+  }
+
+  .content_figure {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+
+  }
+
+  .container_perf h3 {
+    width: 95%;
+    font-size: 24px;
+  }
+
+  #bnone2 {
+    border: none;
+  }
+
+  .container_perf h6 {
+    font-size: 15px;
+  }
+
+  .amount span {
+    font-size: 46px;
+  }
+
+  .content_figure {
+    row-gap: 24px;
+  }
+
+  .latest_invester {
+    padding: 90px 0 90 5px;
+  }
+
+  .container_lat_inv {
+    align-items: flex-start;
+
+  }
+
+  .container_lat_inv h2 {
+    width: 100%;
+    text-align: center;
+  }
+
+  .container_lat_inv h1 {
+    width: 100%;
+    text-align: center;
+  }
+
+  .list_meeting a {
+    text-align: left;
+    font-size: 14px;
+  }
+
+}
+
+/****************** Mobile-l screen ******************/
+@media screen and (max-width: 425px) {
+  .hero {
+    background-image: url("invester/images/financial-information\ \(2\)_3\ \(768\).jpg");
+    height: 513px;
+  }
+
+  .content_hero {
+    padding-top: 550px;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    width: 100%;
+    align-items: center;
+  }
+
+  .content_hero h3 {
+    width: 70%;
+    font-size: 28px;
+    text-align: center;
+
+  }
+
+  .content_hero a {
+    width: 60%;
+    padding: 11px 25px;
+  }
+
+  .content_hero .tittle {
+    margin-bottom: 20px;
+    text-align: left;
+  }
+
+  .content_hero h3 {
+    text-align: cente;
+    margin-left: 0;
+    width: 100%;
+    font-weight: 400;
+    font-size: 28px;
+  }
+
+  .content_hero a {
+    text-align: center;
+    right: 0;
+    width: 80%;
+    padding: 14px 50px;
+  }
+
+  .content_hero .tittle {
+    margin-bottom: 20px;
+  }
+
+  .performance {
+    margin-top: 18rem;
+    padding-left: 10px;
+
+  }
+
+  .amount span {
+    font-size: 32px;
+  }
+
+  .content_figure {
+    row-gap: 24px;
+  }
+
+  .container_lat_inv {
+    align-items: flex-start;
+
+  }
+
+  .list_meeting a {
+
+    text-align: left;
+    font-size: 14px;
+  }
+
+}
+
+/****************** Mobile-m screen ******************/
+@media screen and (max-width: 375px) {}
+
+/****************** Mobile-s screen ******************/
+@media screen and (max-width: 320px) {}
