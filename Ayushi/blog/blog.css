@@ -362,7 +362,7 @@ nav ul .arogya {
 /* section 5 */
 
 .section5 {
-  padding: 5rem 6rem;
+  padding: 6rem;
 }
 
 .section5Head {
@@ -426,7 +426,7 @@ footer p {
 }
 .subTop1 {
   width: 25%;
-  margin-left: 1rem;
+  margin-left: 0.5rem;
 }
 .subTop1 img {
   width: 150px;
@@ -438,6 +438,7 @@ footer p {
 }
 .subTop2 .menu {
   display: flex;
+  flex-wrap: wrap;
   gap: 2rem;
   margin-bottom: 2rem;
 }
@@ -616,12 +617,56 @@ footer .bottom {
   .card {
     box-shadow: 0 3px 25px rgba(0, 0, 0, 0.16);
   }
-}
-@media screen and (max-width: 1046px) {
-  .card > img {
-    width: 210px;
+
+  /* footer */
+
+  .footer {
+    padding: 3rem 4rem;
+  }
+
+  footer p {
+    font-size: 14px;
+    color: #717170;
+    font-weight: 300;
+  }
+  footer .top {
+    flex-direction: column;
+    justify-content: center;
+    padding-bottom: 2rem;
+  }
+  .subTop1 img {
+    width: 100px;
+  }
+  .subTop1 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+  }
+  .subTop2 {
+    width: 100%;
+    justify-content: center;
+  }
+  .subTop2 .menu {
+    gap: 1.5rem;
+  }
+  .menu li .same {
+    font-size: 16px;
+  }
+  .subTop2 .address {
+    width: 100%;
+  }
+
+  footer .bottom {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+  .bottom .subBottom1 p {
+    font-size: 16px;
   }
 }
+
 @media screen and (max-width: 1046px) {
   .card > img {
     width: 200px;
@@ -778,9 +823,32 @@ footer .bottom {
     width: 292px;
     margin-left: 0.8rem;
     margin-right: 0.5rem;
+  }
 
-    /* border: 1px solid #0000004d; */
-    /* box-shadow: none; */
+  /* footer */
+
+  footer {
+    padding: 3rem;
+  }
+
+  .address {
+    flex-direction: column;
+  }
+  .address .location {
+    gap: 5px;
+  }
+  .locationIcon {
+    width: 28px;
+    padding-right: 15px;
+  }
+
+  .bottom .subBottom1 {
+    flex-direction: column;
+    gap: 5px;
+  }
+  .bottom .subBottom1 p {
+    color: #707070;
+    font-weight: 300;
   }
 }
 
