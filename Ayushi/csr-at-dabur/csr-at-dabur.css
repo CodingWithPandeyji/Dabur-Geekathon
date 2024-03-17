@@ -201,8 +201,8 @@ nav ul .arogya {
   width: 100%;
   display: flex;
   margin: 0 auto;
-  /* justify-content: center; */
-  gap: 3rem;
+  justify-content: space-between;
+
   flex-wrap: wrap;
   margin-top: 4rem;
 }
@@ -213,7 +213,7 @@ nav ul .arogya {
 
 .card > img {
   width: 400px;
-  height: 250;
+  height: 250px;
 }
 
 .pipe,
@@ -286,4 +286,186 @@ nav ul .arogya {
 .card:hover .pipe {
   transform: matrix(1, 0, 0, 1, 0, -10) rotateZ(-90deg);
   bottom: 0;
+}
+
+@media screen and (max-width: 1437px) {
+  .section4 {
+    padding: 5rem 8rem;
+  }
+  .cards {
+    justify-content: space-evenly;
+  }
+}
+@media screen and (max-width: 1366px) {
+  .bannerHead {
+    font-size: 32px;
+  }
+}
+
+@media screen and (max-width: 1334px) {
+  .section2,
+  .section4,
+  .section5 {
+    padding: 2rem;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .sectionHead {
+    font-size: 28px;
+  }
+  .sectionTitle {
+    font-size: 14px;
+  }
+
+  .sectionText {
+    width: 90%;
+  }
+  .sectionMatrix .matrixHead {
+    font-size: 48px;
+  }
+  .matrixText {
+    font-size: 14px;
+  }
+  .section4 .sectionHead {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .section2,
+  .section4,
+  .section5 {
+    padding: 2rem 5rem;
+  }
+
+  .sectionMatrix {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+  }
+  .sectionMatrix div {
+    padding: 3rem 8rem;
+    margin-bottom: 2rem;
+  }
+  .sectionMatrix .lastMatrix {
+    padding: 3rem 6rem;
+  }
+  .sectionMatrix .Matrix2 {
+    border-right: none;
+  }
+}
+
+@media screen and (max-width: 836px) {
+  .section2,
+  .section4,
+  .section5 {
+    padding: 2rem 4rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  .bannerHead {
+    width: 100%;
+    position: relative;
+    left: 0;
+    text-align: center;
+    font-size: 28px;
+    font-weight: 400;
+  }
+  .section2,
+  .section4,
+  .section5 {
+    padding: 2rem;
+  }
+  .section2 img {
+    width: 400px;
+  }
+  .section4 .sectionHead {
+    width: 100%;
+  }
+  .discoverMore {
+    opacity: 1;
+  }
+  .cardText {
+    display: none;
+  }
+  .card {
+    box-shadow: 0 3px 25px rgba(0, 0, 0, 0.16);
+  }
+  .card .pipe {
+    transform: matrix(1, 0, 0, 1, 0, -10) rotateZ(-90deg);
+    bottom: 0;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .section2,
+  .section4,
+  .section5 {
+    padding: 2rem;
+  }
+  .matrixHead {
+    font-size: 32px;
+  }
+  .matrixText {
+    font-size: 12px;
+  }
+}
+@media screen and (max-width: 674px) {
+  .section2,
+  .section4,
+  .section5 {
+    padding: 2rem;
+  }
+}
+
+@media screen and (max-width: 633px) {
+  .section2,
+  .section4,
+  .section5 {
+    padding: 2rem 1rem;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .card > img {
+    width: 300px;
+  }
+  .discription div {
+    font-size: 14px;
+  }
+  .discoverMore {
+    gap: 20px;
+  }
+  .discoverMore a {
+    font-weight: 500;
+  }
+  .discoverMore img {
+    width: 50px;
+  }
+  .sectionHead {
+    font-size: 24px;
+  }
+  .sectionTitle {
+    font-size: 13px;
+  }
+
+  .sectionMatrix {
+    padding-top: 2rem;
+  }
+  .sectionMatrix div {
+    border: none;
+  }
+
+  .section2 img {
+    width: 300px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+}
+@media screen and (max-width: 320px) {
+  .section2 img {
+    width: 250px;
+  }
 }

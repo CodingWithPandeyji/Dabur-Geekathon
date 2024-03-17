@@ -104,6 +104,7 @@ nav ul .arogya {
 
 .section2 {
   padding: 3rem 6rem;
+  padding-left: 7.5rem;
 }
 
 .sectionTitle {
@@ -127,7 +128,9 @@ nav ul .arogya {
   width: 95%;
   display: flex;
   margin: 0 auto;
+
   gap: 2rem;
+
   flex-wrap: wrap;
   margin-top: 4rem;
 }
@@ -361,8 +364,7 @@ nav ul .arogya {
 .section5 {
   padding: 5rem 6rem;
 }
-.section5Iitle {
-}
+
 .section5Head {
   padding-top: 1rem;
   font-size: 35px;
@@ -424,6 +426,9 @@ nav ul .arogya {
   .section5 {
     padding: 4rem 3rem;
   }
+  .section2 {
+    padding-left: 4rem;
+  }
   /* .slider-wrapper {
     padding: 3rem 2rem;
   } */
@@ -460,6 +465,9 @@ nav ul .arogya {
   .section5 {
     padding: 2rem;
   }
+  .section2 {
+    padding-left: 3.5rem;
+  }
   .card > img {
     width: 260px;
   }
@@ -482,7 +490,7 @@ nav ul .arogya {
   }
 }
 
-@media screen and (max-width: 1101px) {
+@media screen and (max-width: 1106px) {
   .card > img {
     width: 215px;
   }
@@ -519,6 +527,9 @@ nav ul .arogya {
 }
 
 @media screen and (max-width: 1024px) {
+  .section2 {
+    padding-left: 2.5rem;
+  }
   .section3Wrapper {
     width: 800px;
   }
@@ -660,8 +671,7 @@ nav ul .arogya {
     margin: 0 auto;
     padding: 3rem 0;
   }
-  .slider-wrapper {
-  }
+
   .slider {
     width: 292px;
     margin-left: 0.8rem;
