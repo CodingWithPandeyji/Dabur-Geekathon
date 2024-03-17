@@ -9,6 +9,11 @@
 html,body{
   width: 100%;
   height: 100%;
+  overflow-x: hidden;
+}
+
+header{
+    width: 100vw;
 }
 
 a{
@@ -23,13 +28,18 @@ nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0px 5rem;
-    padding: 1.5rem 5rem;
+    padding: 0.5rem 5rem;
+    /* padding: 1.5rem 5rem; */
+   
    
 }
 
 nav ul{
     display: flex;
+}
+
+nav img{
+    display: block;
 }
 nav ul a{
     padding: 0px 0.6rem;
@@ -37,6 +47,26 @@ nav ul a{
     font-family: "EB Garamond", serif;
     font-weight: 200;
 }
+
+
+
+
+/* dropdown hover */
+
+
+
+
+
+
+nav .gayab li #Investers{
+      display: none;
+}
+
+nav .gayab li #Investers:hover{
+    display: block;
+}
+
+
 
 nav ul .same{
     /* color: #7E7A77; */
@@ -52,6 +82,10 @@ nav ul .globe{
 
 nav ul .arogya{
     font-size: 15px;
+}
+
+nav ul .menu{
+    display: none;
 }
 
 .section-1{
@@ -936,44 +970,282 @@ box-shadow: 0px -1px 30px 0px rgba(0,0,0,0.34);
                         color: #707070;
                     }
 
+                    .section-16 .ingredients .search input{
+                        padding: 10px 10px;
+                    }
+
+
+                   /* footer */
+footer {
+    background-color: #fcfbf9;
+    padding: 3rem 6rem;
+  }
+  
+  footer .top {
+    display: flex;
+    align-items: center;
+    padding-bottom: 4rem;
+    border-bottom: 0.5px solid #717170;
+  }
+  footer p {
+    color: #717170;
+    font-weight: 300;
+  }
+  .subTop1 {
+    width: 25%;
+    margin-left: 0.5rem;
+  }
+  .subTop1 img {
+    width: 150px;
+  }
+  .subTop2 {
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+  }
+  .subTop2 .menu {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin-bottom: 2rem;
+  }
+  .menu li .same {
+    font-family: "EB Garamond", serif;
+    font-size: 20px;
+    font-weight: 500;
+    color: #d1a272;
+  }
+  .subTop2 .address {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+  }
+  .address1 p {
+    margin-bottom: 10px;
+  }
+  .address1Head {
+    color: #707070;
+    font-weight: 700;
+  }
+  .address .location {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .locationIcon {
+    width: 22px;
+    height: 28px;
+    background-image: url("../../Logo/icon-location.svg");
+    background-repeat: no-repeat;
+  }
+  .subTop2 .contact div {
+    display: flex;
+    gap: 20px;
+  }
+  .contact .number {
+    margin-bottom: 15px;
+  }
+  
+  footer .bottom {
+    margin-top: 2rem;
+    width: 100%;
+    justify-content: space-between;
+    display: flex;
+  }
+  .bottom .subBottom1 {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  .bottom .subBottom1 p {
+    font-family: "EB Garamond", serif;
+    font-weight: 500;
+    font-size: 20px;
+    letter-spacing: 0px;
+    /* color: #707070; */
+    line-height: 1.1;
+  }
+  
+  .bottom .subBottom2 {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+  }
+  
+  .disclaimer,
+  .privacy-policy {
+    color: #d1a272;
+  }
+                   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                /* drop down code */
+                *{
+                    margin: 0;
+                    padding: 0;
+                    box-sizing: border-box;
+                }
+                
+                .section{
+                    margin-left: 1.25rem;
+                }
+                .container_invester{
+                    padding-top: 20px;
+                    padding-left: 30px;
+                    padding-right: 20px;
+                    padding-bottom: 20px;
+                    display: flex;
+                    justify-content:space-evenly;
+                    
+                    gap: 3rem;
+                }
+                a{   
+                    font-family: "EB Garamond", serif;
+                    text-decoration: none;
+                    font-size: 15px;
+                    color: rgb(112,112,112);
+                    line-height: 16.5px;
+                }
+                
+                .content{
+                    width: 30%;
+                    display: flex;
+                    flex-direction: column;
+                    gap:0.5rem
+                }
+                .content .detail:hover {
+                    color:black;
+                    transition: all .3s ease-in-out;
+                }
+                .content #one img{
+                    display: block;
+                    width: 310px;
+                    height: 150px;   
+                }
+                .content p{
+                    font-family:"Nunito Sans", sans-serif ;
+                    width: 95%;
+                    font-size: 14px;
+                    font-weight: 300;
+                }
+                .content  .button{
+                    background-color: #D1A272;
+                    padding-top: 5px;
+                    padding-bottom: 5px;
+                    text-align: center;
+                }
+                .content .heading{
+                    
+                color: rgb(209, 162, 114);
+                font-weight: 500;
+                text-transform: capitalize;
+                }
+                * .section{
+                    margin-left: 1.25rem;
+                }
+                .container_newsroom{
+                    padding-top: 20px;
+                    padding-left: 30px;
+                    padding-right: 20px;
+                    padding-bottom: 20px;
+                    display: flex;
+                    justify-content:space-between;
+                    
+                    gap: 3rem;
+                }
+                a{
+                    text-decoration: none;
+                }
+                .content{
+                    width: 30%;
+                    display: flex;
+                    flex-direction: column;
+                    gap:0.5rem
+                }
+                .content #one img{
+                    display: block;
+                    width: 310px;
+                    height: 150px;   
+                }
+                .content p{
+                    font-family:"Nunito Sans", sans-serif ;
+                    width: 95%;
+                    font-size: 14px;
+                    font-weight: 300;
+                }
+                .content  .button{
+                    background-color: #D1A272;
+                    padding-top: 5px;
+                    padding-bottom: 5px;
+                    text-align: center;
+                }
+                .content .heading{
+                    color: rgb(209, 162, 114);
+                    font-weight: 500;
+                    text-transform: capitalize;
+                    }
+
+
+
+
+
+
+
                    
 
                     
+                    @media screen and (max-width: 768px){
+                       nav .gayab{
+                        display: none;
 
-                    /* jhjjkjhj */
-                    .section-15 .ingredients .search{
-                        border: solid 1px #D1A272;
-                        width: 30%;
-                        display: flex;
-                        justify-content: space-between;
-                        align-items: center;
-                        padding: 0.7rem 2rem;
-    
-    
-                    }
-                    .section-15 .location .search input{
-                        border-style: none;
-                        /* width: 480px; */
-                       outline: none;
-                         
+                       }
+                       nav ul .menu{
+                        display: inline;
+                       }
+
+                       nav{
+                        padding-bottom: 0;
                         
-                      
+                       }
+    
+
+                    }
+                    /****** Mobile-l screen ******/
+                    @media screen and (max-width: 425px){
+                    nav{
                        
-                        font-weight: 100;
-                        font-size: 20px;
-                        line-height: 1.2;
-                        
-                        text-align: left;
+                       padding: 0;
+                       gap: 2rem;
                     }
-    
-                    .section-15 .location .search i{
-                        color: #D1A272;
                     }
-    
-                    .section-15 .location .search input::placeholder{
-                        color: #adadad;
+                    /****** Mobile-m screen ******/
+                    @media screen and (max-width: 375px){
+                    
                     }
-            
+                    /****** Mobile-s screen ******/
+                    @media screen and (max-width: 320px){
+                    
+                    }
+
+
+                   
                 
           
 
