@@ -117,7 +117,7 @@ nav ul .arogya {
 
 .sectionHead {
   text-align: center;
-  color: #d1a272;
+  color: rgb(209, 162, 114);
   font-family: "EB Garamond", serif;
   font-size: 2.2rem;
   font-weight: 500;
@@ -406,6 +406,108 @@ nav ul .arogya {
   height: 50px;
   color: white;
   background-color: #d1a272;
+}
+
+/* footer */
+footer {
+  background-color: #fcfbf9;
+  padding: 3rem 6rem;
+}
+
+footer .top {
+  display: flex;
+  align-items: center;
+  padding-bottom: 4rem;
+  border-bottom: 0.5px solid #717170;
+}
+footer p {
+  color: #717170;
+  font-weight: 300;
+}
+.subTop1 {
+  width: 25%;
+  margin-left: 1rem;
+}
+.subTop1 img {
+  width: 150px;
+}
+.subTop2 {
+  width: 75%;
+  display: flex;
+  flex-direction: column;
+}
+.subTop2 .menu {
+  display: flex;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+.menu li .same {
+  font-family: "EB Garamond", serif;
+  font-size: 20px;
+  font-weight: 500;
+  color: #d1a272;
+}
+.subTop2 .address {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+}
+.address1 p {
+  margin-bottom: 10px;
+}
+.address1Head {
+  color: #707070;
+  font-weight: 700;
+}
+.address .location {
+  display: flex;
+  gap: 20px;
+}
+
+.locationIcon {
+  width: 22px;
+  height: 28px;
+  background-image: url("../../Logo/icon-location.svg");
+  background-repeat: no-repeat;
+}
+.subTop2 .contact div {
+  display: flex;
+  gap: 20px;
+}
+.contact .number {
+  margin-bottom: 15px;
+}
+
+footer .bottom {
+  margin-top: 2rem;
+  width: 100%;
+  justify-content: space-between;
+  display: flex;
+}
+.bottom .subBottom1 {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.bottom .subBottom1 p {
+  font-family: "EB Garamond", serif;
+  font-weight: 500;
+  font-size: 20px;
+  letter-spacing: 0px;
+  /* color: #707070; */
+  line-height: 1.1;
+}
+
+.bottom .subBottom2 {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.disclaimer,
+.privacy-policy {
+  color: #d1a272;
 }
 @media screen and (max-width: 1536px) {
   .card > img {
