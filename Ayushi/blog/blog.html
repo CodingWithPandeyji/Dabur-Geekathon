@@ -45,7 +45,7 @@
     <link rel="stylesheet" href="blog.css" />
   </head>
   <body>
-    <header>
+    <!-- <header>
       <nav>
         <img src="Images/android-icon-72x72.png" alt="" />
         <ul>
@@ -72,7 +72,7 @@
           </li>
         </ul>
       </nav>
-    </header>
+    </header> -->
 
     <main>
       <!-- section 1 -->
@@ -86,9 +86,21 @@
         <!-- banner image -->
 
         <div class="banner">
-          <img class="bannerImage" src="Images/Blog-2.jpg" alt="" />
-          <h1 class="bannerHead">Blog</h1>
+          <picture
+            ><source
+              srcset="
+                https://www.dabur.com/sites/default/files/2021-10/Blog-2.jpg
+              "
+              media="(min-width: 800px)" />
+            <source
+              srcset="
+                https://www.dabur.com/sites/default/files/2021-10/Blog-2_0.jpg
+              "
+              media="(min-width: 300px)" />
+            <img src="Images/Blog-2.jpg" class="bannerImage" alt=""
+          /></picture>
         </div>
+        <h1 class="bannerHead">Blog</h1>
       </section>
 
       <!-- section 2 -->
@@ -131,7 +143,7 @@
                 <div></div>
               </span>
 
-              <div>AYURVEDIC DAILY ROUTINE</div>
+              <div>DAILY ROUTINE</div>
             </div>
             <div class="discoverMore">
               <a href="#" class="link">Discover more</a>
@@ -242,6 +254,7 @@
 
       <!-- section3 -->
       <section class="section3">
+        <div class="section3Image"></div>
         <div class="section3Wrapper">
           <p class="sectionTitle">AYURVEDA AND SCIENCE</p>
           <h1 class="sectionHead section3Head">
@@ -267,185 +280,184 @@
         <h1 class="sectionHead">
           Check out the most trending articles this season.
         </h1>
+        <div class="slider-container">
+          <div class="slider-wrapper">
+            <div class="slider">
+              <div class="image-container">
+                <span class="floatingContent">IMMUNITY</span>
+                <img
+                  src="Images/Mask-distribution-Baddi7.jpg"
+                  alt="Dabur-masks"
+                />
+              </div>
+              <div class="content-container">
+                <p>Build stronger Immune system to prevent infections</p>
 
-        <div class="slider-wrapper swiper-wrapper">
-          <div class="slider swiper-slide">
-            <div class="image-container">
-              <span class="floatingContent">IMMUNITY</span>
-              <img
-                src="Images/Mask-distribution-Baddi7.jpg"
-                alt="Dabur-masks"
-              />
-            </div>
-            <div class="content-container">
-              <p>Build stronger Immune system to prevent infections</p>
-
-              <div class="icons">
-                <div class="share-icon">
-                  <img src="Images/shareIcon.svg" alt="" />
-                  <div class="count">0</div>
-                </div>
-                <div class="view-icon">
-                  <img src="Images/viewIcon.svg" alt="" />
+                <div class="icons">
+                  <div class="share-icon">
+                    <img src="Images/shareIcon.svg" alt="" />
+                    <div class="count">0</div>
+                  </div>
+                  <div class="view-icon">
+                    <img src="Images/viewIcon.svg" alt="" />
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
-          <div class="slider swiper-slide">
-            <div class="image-container">
-              <span class="floatingContent">IMMUNITY</span>
-              <img
-                src="Images/1kg_chyawanprash for immunity blog.png"
-                alt="Dabur"
-              />
-            </div>
-            <div class="content-container">
-              <p>
-                Key Findings of Dabur Chyawanprash Clinical study on Covid-19
-              </p>
+            <div class="slider">
+              <div class="image-container">
+                <span class="floatingContent">IMMUNITY</span>
+                <img
+                  src="Images/1kg_chyawanprash for immunity blog.png"
+                  alt="Dabur"
+                />
+              </div>
+              <div class="content-container">
+                <p>
+                  Key Findings of Dabur Chyawanprash Clinical study on Covid-19
+                </p>
 
-              <div class="icons">
-                <div class="share-icon">
-                  <img src="Images/shareIcon.svg" alt="" />
-                  <div class="count">0</div>
-                </div>
-                <div class="view-icon">
-                  <img src="Images/viewIcon.svg" alt="" />
+                <div class="icons">
+                  <div class="share-icon">
+                    <img src="Images/shareIcon.svg" alt="" />
+                    <div class="count">0</div>
+                  </div>
+                  <div class="view-icon">
+                    <img src="Images/viewIcon.svg" alt="" />
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
-          <div class="slider swiper-slide">
-            <div class="image-container">
-              <span class="floatingContent">DETOXIFICATION</span>
-              <img src="Images/Detoxification 300x500.jpg" alt="Dabur-masks" />
-            </div>
-            <div class="content-container">
-              <p>Detoxification: Natural Body Cleanse</p>
+            <div class="slider">
+              <div class="image-container">
+                <span class="floatingContent">DETOXIFICATION</span>
+                <img
+                  src="Images/Detoxification 300x500.jpg"
+                  alt="Dabur-masks"
+                />
+              </div>
+              <div class="content-container">
+                <p>Detoxification: Natural Body Cleanse</p>
 
-              <div class="icons">
-                <div class="share-icon">
-                  <img src="Images/shareIcon.svg" alt="" />
-                  <div class="count">0</div>
-                </div>
-                <div class="view-icon">
-                  <img src="Images/viewIcon.svg" alt="" />
+                <div class="icons">
+                  <div class="share-icon">
+                    <img src="Images/shareIcon.svg" alt="" />
+                    <div class="count">0</div>
+                  </div>
+                  <div class="view-icon">
+                    <img src="Images/viewIcon.svg" alt="" />
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
-          <div class="slider swiper-slide">
-            <div class="image-container">
-              <span class="floatingContent">DETOXIFICATION </span>
-              <img src="Images/Panchkarma 300x500.jpg" alt="Dabur-masks" />
-            </div>
-            <div class="content-container">
-              <p>What is Panchakarma Treatment?</p>
+            <div class="slider">
+              <div class="image-container">
+                <span class="floatingContent">DETOXIFICATION </span>
+                <img src="Images/Panchkarma 300x500.jpg" alt="Dabur-masks" />
+              </div>
+              <div class="content-container">
+                <p>What is Panchakarma Treatment?</p>
 
-              <div class="icons">
-                <div class="share-icon">
-                  <img src="Images/shareIcon.svg" alt="" />
-                  <div class="count">0</div>
-                </div>
-                <div class="view-icon">
-                  <img src="Images/viewIcon.svg" alt="" />
+                <div class="icons">
+                  <div class="share-icon">
+                    <img src="Images/shareIcon.svg" alt="" />
+                    <div class="count">0</div>
+                  </div>
+                  <div class="view-icon">
+                    <img src="Images/viewIcon.svg" alt="" />
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
-          <div class="slider swiper-slide">
-            <div class="image-container">
-              <span class="floatingContent">DETOXIFICATION </span>
-              <img
-                src="Images/Regular Elimination 300x500.jpg"
-                alt="Dabur-masks"
-              />
-            </div>
-            <div class="content-container">
-              <p>The Importance of Regular Elimination</p>
+            <div class="slider">
+              <div class="image-container">
+                <span class="floatingContent">DETOXIFICATION </span>
+                <img
+                  src="Images/Regular Elimination 300x500.jpg"
+                  alt="Dabur-masks"
+                />
+              </div>
+              <div class="content-container">
+                <p>The Importance of Regular Elimination</p>
 
-              <div class="icons">
-                <div class="share-icon">
-                  <img src="Images/shareIcon.svg" alt="" />
-                  <div class="count">0</div>
-                </div>
-                <div class="view-icon">
-                  <img src="Images/viewIcon.svg" alt="" />
+                <div class="icons">
+                  <div class="share-icon">
+                    <img src="Images/shareIcon.svg" alt="" />
+                    <div class="count">0</div>
+                  </div>
+                  <div class="view-icon">
+                    <img src="Images/viewIcon.svg" alt="" />
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
-          <div class="slider swiper-slide">
-            <div class="image-container">
-              <span class="floatingContent">DETOXIFICATION </span>
-              <img
-                src="Images/How to Remove Toxins- Main 300x500.jpg"
-                alt="Dabur-masks"
-              />
-            </div>
-            <div class="content-container">
-              <p>How to Remove Toxins from Body for Better Immunity</p>
+            <div class="slider">
+              <div class="image-container">
+                <span class="floatingContent">DETOXIFICATION </span>
+                <img
+                  src="Images/How to Remove Toxins- Main 300x500.jpg"
+                  alt="Dabur-masks"
+                />
+              </div>
+              <div class="content-container">
+                <p>How to Remove Toxins from Body for Better Immunity</p>
 
-              <div class="icons">
-                <div class="share-icon">
-                  <img src="Images/shareIcon.svg" alt="" />
-                  <div class="count">0</div>
-                </div>
-                <div class="view-icon">
-                  <img src="Images/viewIcon.svg" alt="" />
+                <div class="icons">
+                  <div class="share-icon">
+                    <img src="Images/shareIcon.svg" alt="" />
+                    <div class="count">0</div>
+                  </div>
+                  <div class="view-icon">
+                    <img src="Images/viewIcon.svg" alt="" />
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
-          <div class="slider swiper-slide">
-            <div class="image-container">
-              <span class="floatingContent">DOSHAS</span>
-              <img src="Images/What is Vata Dosha.jpg" alt="Dabur-masks" />
-            </div>
-            <div class="content-container">
-              <p>What is Vata Dosha?</p>
+            <div class="slider">
+              <div class="image-container">
+                <span class="floatingContent">DOSHAS</span>
+                <img src="Images/What is Vata Dosha.jpg" alt="Dabur-masks" />
+              </div>
+              <div class="content-container">
+                <p>What is Vata Dosha?</p>
 
-              <div class="icons">
-                <div class="share-icon">
-                  <img src="Images/shareIcon.svg" alt="" />
-                  <div class="count">0</div>
-                </div>
-                <div class="view-icon">
-                  <img src="Images/viewIcon.svg" alt="" />
+                <div class="icons">
+                  <div class="share-icon">
+                    <img src="Images/shareIcon.svg" alt="" />
+                    <div class="count">0</div>
+                  </div>
+                  <div class="view-icon">
+                    <img src="Images/viewIcon.svg" alt="" />
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
-          <div class="slider swiper-slide">
-            <div class="image-container">
-              <span class="floatingContent">DOSHAS</span>
-              <img
-                src="Images/What is Pitta Dosha- Main 300x500.jpg"
-                alt="Dabur-masks"
-              />
-            </div>
-            <div class="content-container">
-              <p>What is Pitta Dosha?</p>
+            <div class="slider">
+              <div class="image-container">
+                <span class="floatingContent">DOSHAS</span>
+                <img
+                  src="Images/What is Pitta Dosha- Main 300x500.jpg"
+                  alt="Dabur-masks"
+                />
+              </div>
+              <div class="content-container">
+                <p>What is Pitta Dosha?</p>
 
-              <div class="icons">
-                <div class="share-icon">
-                  <img src="Images/shareIcon.svg" alt="" />
-                  <div class="count">0</div>
-                </div>
-                <div class="view-icon">
-                  <img src="Images/viewIcon.svg" alt="" />
+                <div class="icons">
+                  <div class="share-icon">
+                    <img src="Images/shareIcon.svg" alt="" />
+                    <div class="count">0</div>
+                  </div>
+                  <div class="view-icon">
+                    <img src="Images/viewIcon.svg" alt="" />
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-
-        <div class="swiper-button-next"></div>
-        <div class="swiper-button-prev"></div>
-        <div class="swiper-pagination"></div>
       </section>
 
-      <!-- section 54 -->
       <section class="section5">
         <p class="sectionTitle section5Iitle">NEWSLETTER AND SUBSCRIPTION</p>
         <h1 class="sectionHead section5Head">
@@ -461,5 +473,69 @@
         </div>
       </section>
     </main>
+
+    <!-- footer -->
+
+    <footer>
+      <div class="top">
+        <div class="subTop1">
+          <img src="../../Logo/dabur-logo.png" alt="" />
+        </div>
+        <div class="subTop2">
+          <ul class="menu">
+            <li><a class="same" href="">About Us</a></li>
+            <li><a class="same" href="">Our Brands</a></li>
+            <li><a class="same" href="">Investors</a></li>
+            <li><a class="same" href="">Newsroom</a></li>
+            <li><a class="same" href="">Ayurveda & you</a></li>
+            <li><a class="same" href="">Sustainability</a></li>
+            <li><a class="same" href="">Join Us</a></li>
+            <li><a class="same" href="">Support</a></li>
+          </ul>
+          <div class="address">
+            <div class="location">
+              <div class="locationIcon">
+                <!-- <i class="fa-solid fa-location-dot" style="color: #d1a972"></i> -->
+              </div>
+              <div class="address1">
+                <p class="address1Head">Dabur Registered Office:</p>
+                <p>8/3, Asaf Ali Road, New Delhi - 110002</p>
+              </div>
+            </div>
+
+            <div class="contact">
+              <div class="number">
+                <img src="../../Logo/icon-call.svg" alt="" />
+                <p>0120-3962100</p>
+              </div>
+              <div class="number">
+                <img src="../../Logo/Icon-fax.svg" alt="" />
+                <p>0120-4374935</p>
+              </div>
+              <div class="number">
+                <img src="../../Logo/icon-mail.svg" alt="" />
+                <p>corpcomm@dabur.com</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="bottom">
+        <div class="subBottom1">
+          <p class="Copyright">Copyrights Reserved By Dabur.com</p>
+          <p class="disclaimer">Disclaimer</p>
+          <p class="privacy-policy">Privacy Policy</p>
+        </div>
+        <div class="subBottom2">
+          <img src="../../Logo/Icon-facebook.svg" alt="" /><img
+            src="../../Logo/Icon-instagram.svg"
+            alt=""
+          /><img src="../../Logo/Icon-twitter.svg" alt="" /><img
+            src="../../Logo/Icon-youtube.svg"
+            alt=""
+          />
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
