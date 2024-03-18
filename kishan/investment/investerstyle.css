@@ -6,6 +6,11 @@
 
 body {
   overflow-x: hidden;
+  background-color: #FCFAF8;
+}
+.tag{
+  margin-top: 50px;
+  background-color: #707070;
 }
 
 h3 {
@@ -90,7 +95,7 @@ a {
 .performance {
   width: 100vw;
   padding: 90px;
-  background-color: #fcfaf8;
+ background-color :#f6f6f6 ;
 }
 
 .container_perf {
@@ -204,10 +209,11 @@ li:hover {
 }
 
 .latest_lower {
-  padding: 4rem;
-  display: flex;
-  justify-content: space-between;
-  gap: 4rem;
+  
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  width: 100%;
+  column-gap:2rem;
 }
 
 .box {
@@ -217,11 +223,24 @@ li:hover {
   align-items: center;
   gap: 3rem;
 }
+/* .boxf{
+  background-color: whitesmoke;
+  padding-bottom: 30px;
+  box-shadow: 30px 30px 30px whitesmoke;
+} */
 
 .boxcontent {
   display: flex;
   flex-direction: column;
   background-color: white;
+  padding-bottom: 2rem;
+  box-shadow: 5px 5px 5px rgb(165, 162, 162);
+
+}
+.box{
+  display: flex;
+  flex-direction: column;
+  gap:3rem
 }
 
 .boxcontent p {
@@ -254,7 +273,7 @@ li:hover {
   width: 350px;
   height: 240px;
   display: block;
-  box-shadow: 5px 5px 5px rgb(165, 162, 162);
+ 
 }
 
 .lbutton {
@@ -267,16 +286,29 @@ li:hover {
 .lbutton:hover {
   background-color: #d1a272;
   color: white;
+} 
+ .latest_lower{
+  padding-top: 100px;
+}
+.containalsocheck h3{
+  padding: 20px 0px 25px;
+  text-align: center;
+}
+.containalsocheck{
+  padding:0 144px;
+  margin: 0 0 90px;
 }
 
 .also_check {
-  padding: 5rem 5rem 10rem 5rem;
+  padding: 90px 0px 0px;
 }
 
 .graph {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+  gap: 3rem;
+  margin-top: 3rem;
 }
 
 .graphbox {
@@ -288,6 +320,16 @@ li:hover {
   flex-direction: column;
   align-items: center;
   gap: 1rem;
+}
+i{
+  font-size: 50px;
+  color:#d1a272;
+}
+.rarrowbutton{
+  display: none;
+}
+.leftarr{
+  display: none;
 }
 
 .graphbox img {
@@ -302,16 +344,29 @@ li:hover {
   font-weight: 300;
   font-size: 16px;
 }
+.quick_links{
+  padding: 90px;
+}
+.container_quick_links{
+  display: flex;
+  flex-direction: column;
+  gap:2rem;
+  align-items: center;
 
-.qick_links {
-  padding: 5rem 10rem;
+}
+.container_quick_links p{
+  font-size: 16px;
+  font-weight: 700;
+  color: #707070;
+  font-family: "Nunito Sans", serif;
 }
 
-.links {
-  display: flex;
-  justify-content: space-evenly;
 
-  text-align: left;
+
+.links {
+  display: grid;
+ grid-template-columns:repeat(3,1fr);
+ column-gap: 5rem;
 }
 
 .boxlinks {
@@ -332,7 +387,9 @@ li:hover {
   display: block;
   text-decoration: none;
   color: #707070;
-  font-size: 18px;
+  
+
+  font-size: 14px;
   font-family: "EB Garamond", serif;
   text-align: left;
   font-weight: 500;
@@ -340,6 +397,9 @@ li:hover {
   position: relative;
   padding-left: 0;
   transition: all 400ms;
+}
+.links_tittle{
+  display: block;
 }
 
 .alinks a::before {
@@ -375,22 +435,47 @@ li:hover {
   font-weight: 500;
   text-align: center;
 }
+.graph:hover{
+  background-color: white;
+  box-shadow: 10px 10px 10px whitesmoke;
+}
 
 /****************************Responsive design ********************************/
-/* @media screen and (max-width: 1024px){
-    .content_hero .tittle{
-       margin-bottom: 20px;
+@media screen and (max-width: 1024px){
+  
+    .latest_invester{
+      padding: 90px 10px;
+     
+    }
+    .hero{
+
+    }
+    .content_hero{
+      top:0vw;
+      left: 0;
+
+    }
+    .latest_invester .box{
+      width: 300px;
+    }
+    .boxcontent img{
+      width: 300px;
     }
     .content_hero h3{
-        width: 30%;
-        font-size: 32px;
+      padding-left: 10px;
+      width: 50%;
+
     }
-    .content_hero a{
-        width: 30%;
-        padding: 11px 30px;
+    .container_perf h3{
+      width: 100%;
+    }
+    .latest_lower{
+      padding-top: 100px;
+    }
+  
     }
 
-} */
+
 /*************** tablet screen ************************/
 
 @media screen and (max-width: 768px) {
@@ -471,7 +556,37 @@ li:hover {
     font-size: 14px;
   }
 
+  .container_quick_links p{
+    text-align: center;
+    width: 100%;
+  }
+ #gd{
+  display: none;
+ }
+ .rarrowbutton{
+  display: block;
+ }
+
+  
+  .latest_lower {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3,1fr);
+    row-gap: 3rem;
+
+  }
+  .links{
+    column-gap: 1rem;
+  }
+  .list_meeting{
+    margin-left: 3rem;
+  }
+  .links {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+  }
+
 }
+
 
 /****************** Mobile-l screen ******************/
 @media screen and (max-width: 425px) {
@@ -525,8 +640,9 @@ li:hover {
   }
 
   .performance {
-    margin-top: 18rem;
-    padding-left: 10px;
+    width: 100vw;
+    margin-top: 260px;
+    padding: 30px 60px;
 
   }
 
@@ -549,10 +665,99 @@ li:hover {
     font-size: 14px;
   }
 
+  #gd{
+    display: none;
+   }
+   #ga{
+    display: none;
+   }
+   .rarrowbutton{
+    display: block;
+   }
+   .leftarr{
+    display: block;
+  }
+  .links {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+
+  }
+  .latest_lower{
+    align-items: center;
+    margin-left: 3.5rem;
+
+  }
+  .list_meeting{
+    margin-left: 2rem;
+  }
+  .boxcontent{
+    width: 350px;
+    align-items: center;
+  }
+  .boxcontent img{
+    width: 350px;
+
+  }
 }
 
 /****************** Mobile-m screen ******************/
 @media screen and (max-width: 375px) {}
 
 /****************** Mobile-s screen ******************/
-@media screen and (max-width: 320px) {}
+@media screen and (max-width: 320px) {
+  #gd{
+    display: none;
+   }
+   #ga{
+    display: none;
+   }
+   #gc{
+    display: none;
+   }
+   .rarrowbutton{
+    display: block;
+   }
+   .leftarr{
+    display: block;
+  }
+}
+@media screen and (max-width: 1024px) {
+  /* Adjustments for smaller screens */
+  .hero {
+      height: 75vh; /* Adjust as needed */
+  }
+
+  .content_hero {
+      padding-top: 10%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  /* Adjustments for tablet screens */
+  .hero {
+      height: 50vh; /* Adjust as needed */
+  }
+
+  .performance {
+      padding: 50px; /* Adjust as needed */
+  }
+
+  .latest_lower {
+      grid-template-columns: 1fr; /* Display boxes in a single column */
+  }
+}
+
+@media screen and (max-width: 425px) {
+  /* Adjustments for mobile screens */
+  .hero {
+      height: 40vh; /* Adjust as needed */
+  }
+
+  .content_hero {
+      padding-top: 20%;
+  }
+
+  .performance {
+      padding: 30px; /* Adjust as needed */
+  }
+}
