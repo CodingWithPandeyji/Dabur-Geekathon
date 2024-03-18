@@ -265,23 +265,44 @@ nav ul .arogya {
   background-color: #fdfaf9;
   padding: 5rem 6rem;
 }
-/* .slider-container {
+.slider-container {
   padding: 1rem;
-} */
+  overflow-y: hidden;
+  overflow-x: scroll;
+}
 .slider-wrapper {
   padding-top: 3rem;
   padding-bottom: 3rem;
-  overflow-y: hidden;
-  overflow-x: scroll;
+
+  animation: mymove 20s infinite;
   display: grid;
-  /* grid-auto-columns: 1fr; */
   gap: 50px;
   grid-auto-flow: column;
 }
-.slider-wrapper::-webkit-scrollbar {
+.slider-container::-webkit-scrollbar {
   height: 0px;
-  background-color: #aaa;
-  border-radius: 5px;
+}
+@media screen and (min-width: 1024px) {
+  @keyframes mymove {
+    0% {
+      transform: translateX(0);
+    }
+    20% {
+      transform: translateX(0);
+    }
+    40% {
+      transform: translateX(-1360px);
+    }
+    60% {
+      transform: translateX(-2700px);
+    }
+    80% {
+      transform: translateX(-4040px);
+    }
+    100% {
+      transform: translateX(-5380px);
+    }
+  }
 }
 
 .slider {
