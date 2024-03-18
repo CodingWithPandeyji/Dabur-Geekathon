@@ -206,10 +206,10 @@ li:hover {
 
 .latest_lower {
   
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
   width: 100%;
-  gap:2rem
+  column-gap:2rem;
 }
 
 .box {
@@ -290,6 +290,7 @@ li:hover {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+  gap: 3rem;;
 }
 
 .graphbox {
@@ -301,6 +302,16 @@ li:hover {
   flex-direction: column;
   align-items: center;
   gap: 1rem;
+}
+i{
+  font-size: 50px;
+  color:#d1a272;
+}
+.rarrowbutton{
+  display: none;
+}
+.leftarr{
+  display: none;
 }
 
 .graphbox img {
@@ -315,16 +326,29 @@ li:hover {
   font-weight: 300;
   font-size: 16px;
 }
+.quick_links{
+  padding-bottom: 50px;
+}
+.container_quick_links{
+  display: flex;
+  flex-direction: column;
+  gap:2rem;
+  align-items: center;
 
-.qick_links {
-  padding: 5rem 10rem;
+}
+.container_quick_links p{
+  font-size: 16px;
+  font-weight: 700;
+  color: #707070;
+  font-family: "Nunito Sans", serif;
 }
 
-.links {
-  display: flex;
-  justify-content: space-evenly;
 
-  text-align: left;
+
+.links {
+  display: grid;
+ grid-template-columns:repeat(3,1fr);
+ column-gap: 3rem;
 }
 
 .boxlinks {
@@ -345,7 +369,9 @@ li:hover {
   display: block;
   text-decoration: none;
   color: #707070;
-  font-size: 18px;
+  
+
+  font-size: 14px;
   font-family: "EB Garamond", serif;
   text-align: left;
   font-weight: 500;
@@ -353,6 +379,9 @@ li:hover {
   position: relative;
   padding-left: 0;
   transition: all 400ms;
+}
+.links_tittle{
+  display: block;
 }
 
 .alinks a::before {
@@ -484,7 +513,30 @@ li:hover {
     font-size: 14px;
   }
 
+  .container_quick_links p{
+    text-align: center;
+    width: 100%;
+  }
+ #gd{
+  display: none;
+ }
+ .rarrowbutton{
+  display: block;
+ }
+
+  
+  .latest_lower {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3,1fr);
+    row-gap: 3rem;
+
+  }
+  .links{
+    column-gap: 1rem;
+  }
+
 }
+
 
 /****************** Mobile-l screen ******************/
 @media screen and (max-width: 425px) {
@@ -562,10 +614,43 @@ li:hover {
     font-size: 14px;
   }
 
+  #gd{
+    display: none;
+   }
+   #ga{
+    display: none;
+   }
+   .rarrowbutton{
+    display: block;
+   }
+   .leftarr{
+    display: block;
+  }
+  .links {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+
+  }
 }
 
 /****************** Mobile-m screen ******************/
 @media screen and (max-width: 375px) {}
 
 /****************** Mobile-s screen ******************/
-@media screen and (max-width: 320px) {}
+@media screen and (max-width: 320px) {
+  #gd{
+    display: none;
+   }
+   #ga{
+    display: none;
+   }
+   #gc{
+    display: none;
+   }
+   .rarrowbutton{
+    display: block;
+   }
+   .leftarr{
+    display: block;
+  }
+}
