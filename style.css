@@ -89,17 +89,17 @@ nav ul .menu {
   }
 }
 
-.section-1{
-    background-image:  url(images/home-banner.png);
-    padding-top:8rem;
-    padding-left: 8rem;
-    padding-bottom: 4rem;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    animation: change 8s alternate infinite ;
-   
-    
+.section-1 {
+  background-image: url(images/home-banner.png);
+  padding-top: 8rem;
+  padding-left: 8rem;
+  padding-bottom: 4rem;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  animation: change 8s alternate infinite;
+}
+
 .section-1 .heading {
   width: 43%;
   font-size: 62px;
@@ -113,14 +113,13 @@ nav ul .menu {
   margin-top: 1.5rem;
   padding: 13px;
   background-color: white;
- 
 }
 
-.section-1 .search-box input{
-border: none;
-padding-left: 25px;
-font-size: 20px;
-outline: none;
+.section-1 .search-box input {
+  border: none;
+  padding-left: 25px;
+  font-size: 20px;
+  outline: none;
 }
 
 .section-1 .search-box i {
@@ -275,48 +274,39 @@ outline: none;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  animation: nice 13.7s alternate infinite ;
-
+  animation: nice 13.7s alternate infinite;
 }
 
+@keyframes nice {
+  0% {
+    background-image: url(images/img-change-2.jpg);
+  }
 
-@keyframes nice{
-    0%{
-        background-image: url(images/img-change-2.jpg);
-    }
+  40% {
+    background-image: url(images/img-change-3.jpg);
+  }
 
+  65% {
+    background-image: url(images/img-change-4.jpg);
+  }
 
-    40%{
-        background-image: url(images/img-change-3.jpg);
-    }
-
-    
-
-    65%{
-        background-image: url(images/img-change-4.jpg);
-    }
-
-
-
-    100%{
-        background-image: url(images/img-changw-1.jpg);
-    }
+  100% {
+    background-image: url(images/img-changw-1.jpg);
+  }
 }
 
+.section-5 .brand {
+  width: 45%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
 
-.section-5 .brand{
-    width: 45%;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-    padding-top: 5rem;
-    padding-bottom: 5rem;
-   
-    height: 75;
-    padding-left: 5rem;
-    padding-right: 5rem;
-    padding-bottom: 10rem;
-   
+  height: 75;
+  padding-left: 5rem;
+  padding-right: 5rem;
+  padding-bottom: 10rem;
 }
 
 .section-5 .brand h3 {
@@ -341,94 +331,42 @@ outline: none;
   font-size: 20px;
 }
 
-    .section-5new{
-        padding-top: 1rem;
-        background-image: url(images/home-banner-blur.jpg);  
-       
-        
-    }
+.section-5new {
+  padding-top: 1rem;
+  background-image: url(images/home-banner-blur.jpg);
+}
 
+.section-5new img {
+  height: 70px;
+}
 
- 
-   
-    
+.section-5new img:hover {
+  transform: scale(1.3);
+  transition-delay: 2sec;
+  transition: transform 0.5s;
+}
 
+.section-5new .img-wrapper {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 2rem 0px;
+  overflow: hidden;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-    .section-5new img{
-        height: 70px;
-        
-       
-    }
-
-    .section-5new img:hover{
-        transform: scale(1.3);
-        transition-delay: 2sec;
-        transition: transform .5s;
-    }
-
-
-
-    .section-5new .img-wrapper{
-        display: flex;
-        justify-content: space-evenly;
-        align-items: center;
-        padding: 2rem 0px;
-        overflow: hidden;
-        
-    }
-    
-    .section-5new .blackandwhite{
-        -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
-        filter: grayscale(100%);
-        width: 90px ;
-        height: 90px;
-    }
-
-
-
-
-
-
-    .section-6 .ingredients{
-        width: 65%;
-        margin-left: auto;
-        margin-right: auto;
-        text-align: center;
-        padding-top: 5rem;
-        padding-bottom: 5rem;
-       
-        height: 75;
-        padding-left: 5rem;
-        padding-right: 5rem;
-        padding-bottom: 10rem;
-       
-    }
-    
-    .section-6 .ingredients h3{
-        font-size: 16px;
-        color: #707070;
-        font-family: "Nunito Sans", sans-serif;
-    }
-    
-    .section-6 .ingredients h2{
-        font-size: 35px;
-        font-weight: 500;
-        color: #d1a272;
-        margin-top: 2rem;
-        margin-bottom: 2.5rem;
-        background-color: white;
-        }
+.section-5new .blackandwhite {
+  -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(100%);
+  width: 90px;
+  height: 90px;
+}
+.section-6 .ingredients {
+  width: 65%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
 
   height: 75;
   padding-left: 5rem;
@@ -457,7 +395,6 @@ outline: none;
   font-size: 20px;
   color: #707070;
 }
-
 .section-7 {
   padding-top: 2rem;
   padding-bottom: 5rem;
@@ -673,12 +610,6 @@ outline: none;
   padding-bottom: 10rem;
 }
 
-/* .section-9 .scienceof h3{
-            font-size: 16px;
-            color: #707070;
-            font-family: "Nunito Sans", sans-serif;
-        } */
-
 .section-9 .scienceof h2 {
   font-size: 35px;
   font-weight: 500;
@@ -761,9 +692,6 @@ outline: none;
   border: 1px solid #d1a272;
 }
 
-.section-10 .discover {
-}
-
 .section-10 {
   padding-top: 5rem;
   padding-bottom: 5rem;
@@ -816,10 +744,6 @@ outline: none;
   display: inline-block;
   margin-top: 1.5rem;
 }
-
-.section-11 .container {
-}
-
 .section-11 {
   padding-top: 0rem;
   padding-bottom: 2rem;
@@ -1124,28 +1048,22 @@ outline: none;
   text-align: center;
   padding-top: 5rem;
   padding-bottom: 5rem;
+}
+.section5 .dispute {
+  text-align: center;
+  color: #2384c8;
+  padding-top: 3rem;
+  padding-right: 2rem;
+}
 
-  .section5 .dispute{
-    
-    text-align: center;
-    color: #2384C8;
-    padding-top: 3rem;
-    padding-right: 2rem;
-  }
-
-  .section5 .dispute a{
-    color: #337ab7;
-     text-decoration: underline;
-     font-size: 20px;
-     font-weight: 100;
-     text-decoration-thickness: 1px;
-     line-height: 1px;
-     
-     
-  }
-
-  
-
+.section5 .dispute a {
+  color: #337ab7;
+  text-decoration: underline;
+  font-size: 20px;
+  font-weight: 100;
+  text-decoration-thickness: 1px;
+  line-height: 1px;
+}
 
 .section-16 .ingredients h3 {
   font-size: 16px;
