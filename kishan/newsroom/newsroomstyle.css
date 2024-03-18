@@ -227,7 +227,7 @@ body {
 
 
 .content3 {
-    margin-top: 2rem;
+    margin-top: 3rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -276,6 +276,24 @@ body {
 } */
 
 /* <iframe width="221" height="250" src="https://www.youtube.com/embed/v0ZCh59fd_Q" title="Dabur Ratnaprash | Dabur Ratnaprash Ingredients: Kashmiri Kesar | Improve Strength, Stamina &amp; Vigour" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> */
+
+
+.content4 .thumb h4{
+    opacity: 1;
+}
+.content2 .thumb h4{
+    opacity: 1;
+}
+.content4:hover .thumb h4::before {
+    left: 50px;
+    top: 16px;
+    transform: rotate(-90deg);
+}
+.content2:hover .thumb h4::before {
+    left: 50px;
+    top: 16px;
+    transform: rotate(-90deg);
+}
 .media_achive{
     background-color: #FCFBF9;
     padding-top: 90px;
@@ -293,7 +311,7 @@ body {
     width: 259px;
     height: 259px;
 }
-
+/***********************************************/
 .archive {
     background-color: white;
     
@@ -303,18 +321,32 @@ body {
     padding-top: 2rem;
     padding-bottom: 1rem;
 }
-/* ***?  */
+.thumb{
+    background-color: white;
+    
+    text-align: start;
+    position: relative;
+    top: 0px;
+    padding-top: 1.8rem;
+    padding-bottom: 0.9rem;
+
+}
+
 .box:hover{
-background-color: #6F6B67;
+
 z-index: 3;
 opacity: 1;
 box-shadow: 10px 10px 50px whitesmoke;
 }
+.thumb:hover{
+z-index: 3;
+opacity: 1;
+box-shadow: 10px 10px 50px whitesmoke;
+
+}
 
 .archive h4 {
 
-    /* margin-left: 2.5rem;
-    margin-top: 2.5rem; */
     padding-left: 2.5rem;
     text-transform: uppercase;
     font-size: 14px;
@@ -323,12 +355,32 @@ box-shadow: 10px 10px 50px whitesmoke;
     position: relative;
     color: #707070;
 }
-/* ***?  */
-.archive h4::before {
+.thumb h4{
+    padding-left: 2.5rem;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 600;
+    font-family: "Nunito Sans", sans-serif;
+    position: relative;
+    color: #707070;
+    padding-top: 0;
+
+}
+.thumb h4::before{
     content: '';
     position: absolute;
     left: 0;
     top: 0;
+    width: 1px;
+    height: 30px;
+    background-color: #D1A272;
+    transition: all 500ms;
+}
+.archive h4::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 5px;
     width: 1px;
     height: 20px;
     background-color: #D1A272;
@@ -345,7 +397,19 @@ box-shadow: 10px 10px 50px whitesmoke;
     display: flex;
     align-items: center;
 }
+.thumb p{
+    font-family: "EB Garamond", serif;
+    color: #D1A272;
+    font-size: 20px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+
+}
 .archive p img{
+    margin-left: 20px;
+}
+.thumb p img{
     margin-left: 20px;
 }
 .hov_post {
@@ -363,29 +427,42 @@ box-shadow: 10px 10px 50px whitesmoke;
     opacity: 0;
     transition: all 500ms;
 }
-/* ***?  */
+.hov2{
+    height: 4rem;
+    padding-top: 2rem;
+    padding-left: 2.5rem;
+    opacity: 0;
+    transition: all 500ms;
+
+}
 
 .box:hover .hov {
     opacity: 1;
 }
-/* ***?  */
+.content4:hover .hov2{
+    opacity: 1;
+}
+.content2:hover .hov2{
+    opacity: 1;
+}
 
 .box:hover .archive h4::before {
+    left: 50px;
+    top: 25px;
+    transform: rotate(-90deg);
+}
+.content4:hover /.thumb::before{
     left: 50px;
     top: 16px;
     transform: rotate(-90deg);
 }
-/* ////////// */
-/* .content4:hover .hov {
-    opacity: 1;
-} */
-/* ***?  */
-
-/* .content4:hover .archive h4::before {
+.content2:hover /.thumb::before{
     left: 50px;
     top: 16px;
     transform: rotate(-90deg);
-} */
+}
+
+
 
 .archive img {
  
@@ -393,6 +470,11 @@ left: 63%;
     width: 50px;
     height: 11.48px;
    
+}
+.thumb img{
+    left: 63%;
+    width: 50px;
+    height:11.48px ;
 }
 
 /* footer */
@@ -585,17 +667,7 @@ footer {
     }
     
     }
-    #lsp::before{
-        content: '';
-        position: absolute;
-        top:40vh;
-        width: 85vw;
-        right: 0rem;
-        height: 1.3px;
-        background-color: #D3D1D0;;
-        transition: all 500ms;
-
-    }
+ 
     .content3 h2{
         width: 100%;
     }
@@ -611,8 +683,20 @@ footer {
         width: 259px;
     }
     
-
-
+/*********************************hr line fow kwer scrren*************>*/
+    @media screen and (min-width: 768px){
+        #lsp::before{
+            content: '';
+            position: absolute;
+            top:40vh;
+            width: 85vw;
+            right: 0rem;
+            height: 1.3px;
+            background-color: #D3D1D0;;
+            transition: all 500ms;
+        }
+        
+        }
 /****** Mobile-m screen ******/
 @media screen and (max-width: 425px){
     .hero{
@@ -734,7 +818,9 @@ footer {
   .bottom .subBottom1 p {
     font-size: 16px;
   }
+
 }
+
 @media screen and (max-width: 425px){
 
 

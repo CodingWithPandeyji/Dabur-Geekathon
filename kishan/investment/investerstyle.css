@@ -6,6 +6,7 @@
 
 body {
   overflow-x: hidden;
+  background-color: #FCFAF8;
 }
 
 h3 {
@@ -204,10 +205,11 @@ li:hover {
 }
 
 .latest_lower {
-  padding: 4rem;
+  
   display: flex;
   justify-content: space-between;
-  gap: 4rem;
+  width: 100%;
+  gap:2rem
 }
 
 .box {
@@ -217,11 +219,22 @@ li:hover {
   align-items: center;
   gap: 3rem;
 }
+/* .boxf{
+  background-color: whitesmoke;
+  padding-bottom: 30px;
+  box-shadow: 30px 30px 30px whitesmoke;
+} */
 
 .boxcontent {
   display: flex;
   flex-direction: column;
   background-color: white;
+  padding-bottom: 2rem;
+}
+.box{
+  display: flex;
+  flex-direction: column;
+  gap:3rem
 }
 
 .boxcontent p {
