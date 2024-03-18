@@ -1,22 +1,104 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-.hero {
-    background-image: url(assest2/asset\ 9.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    height: 75vh; /* Default height */
+    font-family: "Nunito Sans", sans-serif;
+  }
+  
+  .globe {
+    font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
+    color: #d1a272;
+  }
+  
+  html,
+  body {
+    width: 100%;
+    height: 100%;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  ul {
+    list-style: none;
+  }
+  header {
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
+  }
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 5rem;
+  }
+  
+  nav ul {
+    display: flex;
+    gap: 1.2rem;
+  }
+  nav ul a {
+    /* padding: 0px 0.8rem; */
+    font-size: 20px;
+    font-family: "EB Garamond", serif;
+    font-weight: 500;
+  }
+  
+  nav ul .same {
+    /* color: #7E7A77; */
+    color: rgba(111, 107, 103, 0.7);
+    font-weight: 500;
+  }
+  
+  /* nav ul .globe {
+    color: #d1a272;
+    font-size: 18px;
+  } */
+  
+  nav ul .arogya {
+    font-size: 15px;
+  }
+
+.navigationBar {
+    z-index: -1;
+    width: 100%;
+    height: 3.5rem;
+    background-color: #f4f4f5;
+    display: flex;
+    align-items: center;
+    padding-left: 4rem;
+    color: #707070;
+    font-weight: 300;
+    position: relative;
+    font-size: 14px;
+  }
+  
+  .navigationBar a {
+    color: #5989bb;
+    margin-right: 0.5rem;
+    font-weight: 300;
+  }
+  .navigationBar span {
+    color: #cccdd1;
+    margin-right: 0.5rem;
+  }
+  
+
+  .hero {
+    background-image: url('./assest2/asset\ 9.png'); /* Replace 'path/to/your/image.jpg' with the actual path to your image */
+    background-size: cover; /* This ensures the image covers the entire hero section */
+    background-position: center; /* This centers the image within the hero section */
+    height: 300px;
+    width: 100%;
 }
 
 /* Media query for smaller screens */
 @media only screen and (max-width: 768px) {
-    .hero {
-        height: 50vh; /* Adjusted height for smaller screens */
-    }
-
+  .hero{
+    background-size: cover; 
+    background-position: center;
+    height: 200px;
+    width: 100%;
+  }
 }
 
 .hero_heading{
@@ -26,7 +108,6 @@
     font-family: 'EB Garamond', serif;
     line-height: 1.2;
     color: #6F6B67;
-
 }
 .hero_heading h4{
     font-size: 4rem;
@@ -194,6 +275,10 @@ font-size:1.2rem ;
     width: 30%;
     padding: 0px 50px;
 }
+.all-about-info{
+    display: flex;
+    flex-direction: row;
+}
 .heading{
     margin-top: 50px;
     margin-bottom: 10px;
@@ -210,41 +295,40 @@ font-size:1.2rem ;
 .email{
     color: #D1A272;
 }
-.cn{
-    margin-top: 80px;
-    margin-bottom: 0px;
-}
-.contact-link p{
-    margin-bottom: 0px;
+.last-info{
+    padding: 0px 70px;
 }
 
-/* @media screen and (max-width:867px) {
-    .form {
+@media only screen and (max-width: 998px){
+    .map-detail{
         display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: start;
-        width: 10%;
-        padding: 10px;
+        flex-direction:column;
+        width: 100%;
     }
-    .Contact_Details{
-        margin: auto;
-        display: flex;
-        flex-direction: column;
+    .map-img{
+      width: 80%;
     }
-    .purpose select{
-        border: 2px solid red;
-        width: 500px;
-        
+    .map-img img{
+      width: 100%;
     }
-    .company_name input{
-        width: 100px;
+    .office{
+      padding: 0% 25%;
+      width: 100%;
     }
-    .Contact_Details input{
-        width: 100px;
+    .heading{
+      text-align: center;
+      padding: 40px 0px;
     }
-} */
+}
 
+@media screen and (max-width:550px) {
+  .all-about-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
 
 
 
@@ -272,7 +356,110 @@ font-size:1.2rem ;
     padding: 8px;
     border: 1px solid #ccc;
     border-radius: 3px;
-}
+} 
+
+/* footer */
+footer {
+    background-color: #fcfbf9;
+    padding: 3rem 6rem;
+  }
+  
+  footer .top {
+    display: flex;
+    align-items: center;
+    padding-bottom: 4rem;
+    border-bottom: 0.5px solid #717170;
+  }
+  footer p {
+    color: #717170;
+    font-weight: 300;
+  }
+  .subTop1 {
+    width: 25%;
+    margin-left: 0.5rem;
+  }
+  .subTop1 img {
+    width: 150px;
+  }
+  .subTop2 {
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+  }
+  .subTop2 .menu {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin-bottom: 2rem;
+  }
+  .menu li .same {
+    font-family: "EB Garamond", serif;
+    font-size: 20px;
+    font-weight: 500;
+    color: #d1a272;
+  }
+  .subTop2 .address {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+  }
+  .address1 p {
+    margin-bottom: 10px;
+  }
+  .address1Head {
+    color: #707070;
+    font-weight: 700;
+  }
+  .address .location {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .locationIcon {
+    width: 22px;
+    height: 28px;
+    background-image: url("../../Logo/icon-location.svg");
+    background-repeat: no-repeat;
+  }
+  .subTop2 .contact div {
+    display: flex;
+    gap: 20px;
+  }
+  .contact .number {
+    margin-bottom: 15px;
+  }
+  
+  footer .bottom {
+    margin-top: 2rem;
+    width: 100%;
+    justify-content: space-between;
+    display: flex;
+  }
+  .bottom .subBottom1 {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  .bottom .subBottom1 p {
+    font-family: "EB Garamond", serif;
+    font-weight: 500;
+    font-size: 20px;
+    letter-spacing: 0px;
+    /* color: #707070; */
+    line-height: 1.1;
+  }
+  
+  .bottom .subBottom2 {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+  }
+  
+  .disclaimer,
+  .privacy-policy {
+    color: #d1a272;
+  }
 
 /* Style contact details section */
 .Contact_Details {
@@ -369,3 +556,4 @@ font-size:1.2rem ;
         width: 100%;
     }
 }
+
