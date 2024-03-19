@@ -267,16 +267,16 @@ nav ul .arogya {
   transition: 0.8s;
   cursor: pointer;
 }
-.owner1{
+/* .owner1 {
   display: none;
 }
 .owner2 {
   display: none;
 }
-.owner3{
+.owner3 {
   display: block;
-}
-.hover2:hover ~ .principles_box .owner2 {
+} */
+/* .hover2:hover ~ .principles_box .owner2 {
   display: block;
 }
 
@@ -284,7 +284,7 @@ nav ul .arogya {
   display: none;
 } 
 
-.hover2 span:hover {
+/* .hover2 span:hover {
   color: #c0bcb9;
   font-size: 22px;
   transition: 0.8s ease-in-out;
@@ -438,6 +438,7 @@ nav ul .arogya {
 }
 
 .right-content img {
+<<<<<<< HEAD
     max-width: 100%;
     height: auto;
     display: block;
@@ -556,6 +557,127 @@ nav ul .arogya {
     color: #d1a272;
   }
                    
+=======
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+/* <!-- :::::::::::::::::::::::::::::opportunities::::::::::::::::::::: --> */
+.opportunity {
+  margin-top: 42%;
+}
+
+.opportunity img {
+  background-size: cover;
+  width: 100vw;
+  background-size: auto;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+footer {
+  background-color: #fcfbf9;
+  padding: 3rem 6rem;
+  margin-top: 2%;
+}
+
+footer .top {
+  display: flex;
+  align-items: center;
+  padding-bottom: 4rem;
+  border-bottom: 0.5px solid #717170;
+}
+footer p {
+  color: #717170;
+  font-weight: 300;
+}
+.subTop1 {
+  width: 25%;
+  margin-left: 0.5rem;
+}
+.subTop1 img {
+  width: 150px;
+}
+.subTop2 {
+  width: 75%;
+  display: flex;
+  flex-direction: column;
+}
+.subTop2 .menu {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+.menu li .same {
+  font-family: "EB Garamond", serif;
+  font-size: 20px;
+  font-weight: 500;
+  color: #d1a272;
+}
+.subTop2 .address {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+}
+.address1 p {
+  margin-bottom: 10px;
+}
+.address1Head {
+  color: #707070;
+  font-weight: 700;
+}
+.address .location {
+  display: flex;
+  gap: 20px;
+}
+
+.locationIcon {
+  width: 22px;
+  height: 28px;
+  background-image: url("../../Logo/icon-location.svg");
+  background-repeat: no-repeat;
+}
+.subTop2 .contact div {
+  display: flex;
+  gap: 20px;
+}
+.contact .number {
+  margin-bottom: 15px;
+}
+
+footer .bottom {
+  margin-top: 2rem;
+  width: 100%;
+  justify-content: space-between;
+  display: flex;
+}
+.bottom .subBottom1 {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.bottom .subBottom1 p {
+  font-family: "EB Garamond", serif;
+  font-weight: 500;
+  font-size: 20px;
+  letter-spacing: 0px;
+  /* color: #707070; */
+  line-height: 1.1;
+}
+
+.bottom .subBottom2 {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.disclaimer,
+.privacy-policy {
+  color: #d1a272;
+}
+>>>>>>> c26b8cbff0eb910f3831f50cb14a01f93d215161
 
 @media only screen and (max-width: 768px) {
   .join_heading {
