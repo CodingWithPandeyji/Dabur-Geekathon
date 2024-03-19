@@ -275,23 +275,16 @@ font-size: 2rem;
   cursor: pointer;
 }
 .owner1{
-  display: none;
+  display: block;
 }
 .owner2{
   display: none;
 }
 .owner3{
-  display: block;
-}
-.hover2:hover ~ .principles_box .owner2 {
-  display: block;
-}
-
-.hover2:hover ~ .principles_box .owner1 {
   display: none;
 }
 
-.hover2 span:hover {
+.hover-link span:hover {
   color: #c0bcb9;
   font-size: 22px;
   transition: 0.8s ease-in-out;
@@ -473,35 +466,22 @@ flex-direction: row;
   }
   /* <!-- :::::::::::::::::::::::::::::opportunities::::::::::::::::::::: --> */
   .opportunity{
-    background-image: url(assest/asset\ 33.jpeg);
-    position: relative;
-    top: 50%;
+    margin-top: 42%;
+  }
+  .opportunity img{
     background-size: cover;
     width: 100vw;
-    height: 100vh;
     background-size: auto;
     background-repeat: no-repeat;
     background-position: center
   
   }
-  .opportunity_heading{
-    width: 80%;
-    margin: auto;
-  }
-  .opportunity button{
-    background: #D1A272;
-    border: none;
-    color: white;
-    padding: 12px 20px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 1rem;
-    margin-top: 20px;
-  }
+  
+ 
   footer {
     background-color: #fcfbf9;
     padding: 3rem 6rem;
+    margin-top: 2%;
   }
   
   footer .top {
