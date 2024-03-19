@@ -264,6 +264,7 @@ nav ul .arogya {
   background-image: url(Images/Leadership_2.jpg);
 }
 .section3Wrapper {
+  padding-top: 1.25rem;
   padding-left: 2.5rem;
   padding-right: 2.5rem;
   border: 20px solid #fdfaf9;
