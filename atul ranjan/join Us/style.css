@@ -202,9 +202,7 @@ padding: 10px;
     line-height: 1.2;
 }
 /* :::::::::::::::::::::::::::::::::::::::::Dabur Principles:::::::::::::::::::::::::::::::::::: */
-#principles{
 
-}
 .principles_heading {
     color: #D1A272;
 text-align: center;
@@ -223,6 +221,8 @@ font-size: 2rem;
     font-size: 2rem;
 
 }
+
+
 .principles_box_content p{
     padding-top: 10%;
   width: 80%;
@@ -245,6 +245,58 @@ font-size: 2rem;
     height: auto;
 
 }
+
+/* .hover1:hover{
+  .owner1{
+    display: block;
+  }
+} */
+
+/* BUTTON  */
+.princple-btn{
+  padding: 10px;
+}
+.hover-btn{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  gap: 0px 16px;
+  
+}
+.hover-link{
+  font-size: 2.6rem;
+  color: #D1A272;
+  margin: 20px 0px;
+}
+
+.hover-link span{
+  color: #c0bcb9;
+  font-size: 18px;
+  transition: 0.8s;
+  cursor: pointer;
+}
+.owner1{
+  display: none;
+}
+.owner2{
+  display: none;
+}
+.owner3{
+  display: block;
+}
+.hover2:hover ~ .principles_box .owner2 {
+  display: block;
+}
+
+.hover2:hover ~ .principles_box .owner1 {
+  display: none;
+}
+
+.hover2 span:hover {
+  color: #c0bcb9;
+  font-size: 22px;
+  transition: 0.8s ease-in-out;
+}
+
 /* ::::::::::::::::::why join Dabur::::::::::::: */
 .join_heading {
     color: #D1A272;
