@@ -2072,6 +2072,10 @@ nav ul a {
     font-size: 28px;
   }
 
+  .section-1 .search-box input{
+    display: none;
+  }
+
   .section-2 article h1 {
     font-size: 28px;
   }
