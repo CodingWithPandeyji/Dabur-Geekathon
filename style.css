@@ -1816,6 +1816,193 @@ a {
 
 
 
+/* mohit responsive */
+
+
+
+
+
+/* Add this CSS at the end of your existing CSS */
+
+/* Improved responsiveness for navigation */
+nav {
+  padding: 1rem 5rem;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav ul a {
+  padding: 0.6rem;
+  font-size: 20px;
+}
+
+/* General responsiveness adjustments */
+@media screen and (max-width: 1200px) {
+  nav {
+    padding: 1rem 3rem;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  nav {
+    padding: 1rem 2rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  nav {
+    padding: 1rem;
+  }
+
+  nav ul {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  nav ul a {
+    padding: 0.6rem 0;
+  }
+
+  .section-1 {
+    padding: 4rem 2rem;
+  }
+
+  .section-1 .heading {
+    font-size: 36px;
+    width: 100%;
+  }
+
+  .section-1 .search-box {
+    width: 100%;
+    margin-top: 1rem;
+  }
+
+  .section-2 article {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .section-3 .container {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .section-3 .article {
+    width: 45%;
+    margin-bottom: 2rem;
+  }
+
+  .section-4 .explore,
+  .section-5 .brand,
+  .section-6 .ingredients,
+  .section-7 .container,
+  .section-8 .knowmore,
+  .section-9 .scienceof,
+  .section-10 .discover,
+  .section-11 .container,
+  .section-12 .container,
+  .section-13 .discover,
+  .section-14 .explore,
+  .section-15 .explore,
+  .section-15 .location .box,
+  .section-16 .ingredients {
+    padding: 2rem;
+  }
+
+  .section-9 .container,
+  .section-15 .frame {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .section-9 img {
+    margin-left: 0;
+    margin-bottom: 1rem;
+  }
+
+  .section-9 .container .left p {
+    text-align: center;
+    margin: 0;
+  }
+
+  .section-15 .location {
+    padding: 0;
+  }
+
+  .section-15 .location .search,
+  .section-15 .location .box {
+    width: 100%;
+  }
+
+  .section-15 .location .search input {
+    width: 70%;
+  }
+
+  .section-15 .location .search i {
+    margin-right: 0.5rem;
+  }
+}
+
+/* Adjustments for smaller devices */
+@media screen and (max-width: 576px) {
+  nav ul a {
+    font-size: 16px;
+  }
+
+  .section-1 .heading {
+    font-size: 28px;
+  }
+
+  .section-2 article h1 {
+    font-size: 28px;
+  }
+
+  .section-3 .article h1 {
+    font-size: 24px;
+  }
+
+  .section-4 .explore h2,
+  .section-5 .brand h2,
+  .section-6 .ingredients h2,
+  .section-7 .container .img h1,
+  .section-8 .knowmore h2,
+  .section-9 .scienceof h2,
+  .section-10 .discover h2,
+  .section-11 .article h1,
+  .section-13 .discover h2,
+  .section-14 .explore h2,
+  .section-15 .explore h2,
+  .section-15 .location .box h1,
+  .section-16 .ingredients h2 {
+    font-size: 20px;
+  }
+
+  .section-4 .explore p,
+  .section-5 .brand p,
+  .section-6 .ingredients p,
+  .section-7 .container .img p,
+  .section-8 .knowmore p,
+  .section-9 .scienceof p,
+  .section-10 .discover p,
+  .section-11 .article p,
+  .section-13 .discover p,
+  .section-14 .explore p,
+  .section-15 .explore p,
+  .section-15 .location .box p,
+  .section-16 .ingredients p {
+    font-size: 16px;
+  }
+}
+
+
+
+
+
 
 
 
