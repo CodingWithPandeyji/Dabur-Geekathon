@@ -97,8 +97,7 @@ nav ul .arogya {
   }
   .hero_header h1 {
     font-size: 21.5px; /* Corrected the selector for the hero heading */
-    top: 0%;
-    left: 0%;
+  
   }
   .btn-explore {
     border: 2px solid red;
@@ -109,10 +108,10 @@ nav ul .arogya {
 .hero_header {
   font-family: Garamond, serif;
   font-size: 1.5rem;
-  position: absolute;
+  position: relative;
   top: 30%;
   left: 12%;
-  width: 100%;
+  width: 45%;
   color: aliceblue;
 }
 .hero_header button {
@@ -283,16 +282,17 @@ nav ul .arogya {
 
 .hover2:hover ~ .principles_box .owner1 {
   display: none;
-} */
+} 
 
 .hover2 span:hover {
   color: #c0bcb9;
   font-size: 22px;
   transition: 0.8s ease-in-out;
-} */
+} 
 
 /* ::::::::::::::::::why join Dabur::::::::::::: */
-.join_heading {
+.join_heading{
+  /* border: 2px solid red; */
   color: #d1a272;
   text-align: center;
   font-size: 2rem;
@@ -443,36 +443,20 @@ nav ul .arogya {
     display: block;
   }
   /* <!-- :::::::::::::::::::::::::::::opportunities::::::::::::::::::::: --> */
-  .opportunity{
-    background-image: url(assest/asset\ 33.jpeg);
-    position: relative;
-    top: 50%;
+  .opportunity img{
+    margin-top: 42%;
     background-size: cover;
     width: 100vw;
-    height: 100vh;
     background-size: auto;
     background-repeat: no-repeat;
     background-position: center
   
   }
-  .opportunity_heading{
-    width: 80%;
-    margin: auto;
-  }
-  .opportunity button{
-    background: #D1A272;
-    border: none;
-    color: white;
-    padding: 12px 20px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 1rem;
-    margin-top: 20px;
-  }
+
   footer {
     background-color: #fcfbf9;
     padding: 3rem 6rem;
+    margin-top: 2%;
   }
   
   footer .top {
@@ -529,7 +513,7 @@ nav ul .arogya {
   .locationIcon {
     width: 22px;
     height: 28px;
-    background-image: url("../../Logo/icon-location.svg");
+    background-image: url("assest/asset\ 54.svg");
     background-repeat: no-repeat;
   }
   .subTop2 .contact div {
@@ -608,5 +592,197 @@ nav ul .arogya {
   }
   .expect_content h5 {
     text-align: center;
+    flex-direction: column;
   }
+  .content{
+    display: flex;
+    flex-direction:column;
+  }
+  .content h4{
+    text-align: center;
+    color: #d1a272;
+    font-size: 1.5rem;
+  }
+  .opportunity{
+    display: none;
+    margin-top:100% ;
+  }
+ footer{
+  margin-top: 280%;
+ }
 }
+footer .bottom {
+  margin-top: 2rem;
+  width: 100%;
+  justify-content: space-between;
+  display: flex;
+}
+.bottom .subBottom1 {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.bottom .subBottom1 p {
+  font-family: "EB Garamond", serif;
+  font-weight: 500;
+  font-size: 20px;
+  letter-spacing: 0px;
+  /* color: #707070; */
+  line-height: 1.1;
+}
+
+.bottom .subBottom2 {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.disclaimer,
+.privacy-policy {
+  color: #d1a272;
+}
+@media screen and (max-width:1106px){
+  /* footer */
+
+footer {
+  padding: 3rem 4rem;
+}
+
+footer p {
+  font-size: 14px;
+  color: #717170;
+  font-weight: 300;
+}
+footer .top {
+  flex-direction: column;
+  justify-content: center;
+  padding-bottom: 2rem;
+}
+.subTop1 img {
+  width: 100px;
+}
+.subTop1 {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+.subTop2 {
+  width: 100%;
+  justify-content: center;
+}
+.subTop2 .menu {
+  gap: 1.5rem;
+}
+.menu li .same {
+  font-size: 16px;
+}
+.subTop2 .address {
+  width: 100%;
+}
+
+footer .bottom {
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+.bottom .subBottom1 p {
+  font-size: 16px;
+}
+}
+@media screen and (max-width:426px){
+/* footer */
+
+footer {
+  padding: 3rem;
+}
+
+.address {
+  flex-direction: column;
+}
+.address .location {
+  gap: 5px;
+}
+.locationIcon {
+  width: 28px;
+  padding-right: 15px;
+}
+
+.bottom .subBottom1 {
+  flex-direction: column;
+  gap: 5px;
+}
+.bottom .subBottom1 p {
+  color: #707070;
+  font-weight: 300;
+}
+}
+  
+
+
+/* Style contact details section */
+.Contact_Details {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+.details_left,
+.details_right {
+  flex: 0 0 48%;
+}
+
+.details_left label,
+.details_right label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.details_left input,
+.details_right input {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+/* Style company name section */
+.company_name label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.company_name input {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+/* Style email, mobile, and pin code sections */
+.email,
+.mobile,
+.pin_code {
+  margin-bottom: 15px;
+}
+
+.email label,
+.mobile label,
+.pin_code label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.email input,
+.mobile input,
+.pin_code input {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
