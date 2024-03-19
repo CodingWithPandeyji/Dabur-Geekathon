@@ -1411,7 +1411,10 @@ nav li #Investers {
 nav li:hover #Investers {
   display: block;
   width: 100%;
- 
+}
+
+#Investers:hover {
+  display: flex;
 }
 
 * {
@@ -1807,20 +1810,7 @@ a {
   font-size: 16px;
 }
 
-
-
-
-
-
-
-
-
-
 /* mohit responsive */
-
-
-
-
 
 /* Add this CSS at the end of your existing CSS */
 
@@ -1998,21 +1988,3 @@ nav ul a {
     font-size: 16px;
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
