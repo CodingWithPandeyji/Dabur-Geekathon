@@ -22,32 +22,7 @@
   ul {
     list-style: none;
   }
-  header {
-    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
-  }
-  nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 5rem;
-  }
   
-  nav ul {
-    display: flex;
-    gap: 1.2rem;
-  }
-  nav ul a {
-    /* padding: 0px 0.8rem; */
-    font-size: 20px;
-    font-family: "EB Garamond", serif;
-    font-weight: 500;
-  }
-  
-  nav ul .same {
-    /* color: #7E7A77; */
-    color: rgba(111, 107, 103, 0.7);
-    font-weight: 500;
-  }
   
   /* nav ul .globe {
     color: #d1a272;
@@ -374,6 +349,9 @@ footer {
     color: #717170;
     font-weight: 300;
   }
+  footer a{
+text-decoration: none;
+  }
   .subTop1 {
     width: 25%;
     margin-left: 0.5rem;
@@ -460,6 +438,84 @@ footer {
   .privacy-policy {
     color: #d1a272;
   }
+  @media screen and (max-width:1106px){
+    /* footer */
+
+  footer {
+    padding: 3rem 4rem;
+  }
+
+  footer p {
+    font-size: 14px;
+    color: #717170;
+    font-weight: 300;
+  }
+  footer .top {
+    flex-direction: column;
+    justify-content: center;
+    padding-bottom: 2rem;
+  }
+  .subTop1 img {
+    width: 100px;
+  }
+  .subTop1 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+  }
+  .subTop2 {
+    width: 100%;
+    justify-content: center;
+  }
+  .subTop2 .menu {
+    gap: 1.5rem;
+  }
+  .menu li .same {
+    font-size: 16px;
+  }
+  .subTop2 .address {
+    width: 100%;
+  }
+
+  footer .bottom {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+  .bottom .subBottom1 p {
+    font-size: 16px;
+  }
+}
+@media screen and (max-width:426px){
+  /* footer */
+
+  footer {
+    padding: 3rem;
+  }
+
+  .address {
+    flex-direction: column;
+  }
+  .address .location {
+    gap: 5px;
+  }
+  .locationIcon {
+    width: 28px;
+    padding-right: 15px;
+  }
+
+  .bottom .subBottom1 {
+    flex-direction: column;
+    gap: 5px;
+  }
+  .bottom .subBottom1 p {
+    color: #707070;
+    font-weight: 300;
+  }
+}
+    
+
 
 /* Style contact details section */
 .Contact_Details {
