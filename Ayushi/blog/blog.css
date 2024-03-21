@@ -132,14 +132,15 @@ navbar media query
     font-size: 18px;
   }
   nav ul .arogya {
+    margin-right: 0.4rem;
     font-size: 14px;
   }
   .gayab {
     gap: 0.5rem;
   }
   nav ul .glob {
-    width: 18px;
-    height: 18px;
+    width: 24px;
+    height: 24px;
   }
   .icon a {
     font-size: 18px;
@@ -149,8 +150,8 @@ navbar media query
     height: 18px;
   }
   .magnify {
-    width: 18px;
-    height: 18px;
+    width: 24px;
+    height: 24px;
   }
 }
 
@@ -425,7 +426,6 @@ navbar media query
 .slider-wrapper {
   padding-top: 3rem;
   padding-bottom: 3rem;
-
   animation: mymove 20s infinite;
   display: grid;
   gap: 50px;

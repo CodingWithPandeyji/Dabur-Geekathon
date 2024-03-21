@@ -128,13 +128,14 @@ navbar media query
   }
   nav ul .arogya {
     font-size: 14px;
+    margin-right: 0.4rem;
   }
   .gayab {
     gap: 0.5rem;
   }
   nav ul .glob {
-    width: 18px;
-    height: 18px;
+    width: 24px;
+    height: 24px;
   }
   .icon a {
     font-size: 18px;
@@ -144,8 +145,8 @@ navbar media query
     height: 18px;
   }
   .magnify {
-    width: 18px;
-    height: 18px;
+    width: 24px;
+    height: 24px;
   }
 }
 
