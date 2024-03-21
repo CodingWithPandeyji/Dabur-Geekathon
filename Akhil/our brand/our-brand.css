@@ -632,7 +632,7 @@ a {
 
 .card > img {
   padding-top: 4rem;
-  width: 300px;
+  width: 400px;
   height: 250px;
 }
 
@@ -678,7 +678,7 @@ a {
   gap: 30px;
   opacity: 0;
   padding-left: 1.5rem;
-  padding-bottom: 1.5rem;
+  padding-bottom: 2.5rem;
 }
 .discoverMore a {
   font-family: "EB Garamond", serif;
@@ -688,7 +688,7 @@ a {
 
 .cardText {
   padding: 0 1.2rem 1rem;
-  width: 300px;
+  width: 400px;
   color: #707070;
   font-weight: 300;
 }
