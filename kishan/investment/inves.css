@@ -110,6 +110,10 @@ nav ul .menu {
 .glob {
   height: 24px;
 }
+nav .magnify i{
+  font-size: 28px;
+
+}
 /* 
 
 navbar media query
@@ -170,6 +174,11 @@ navbar media query
     width: 18px;
     height: 18px;
   }
+  nav ul .icons{
+    display: flex;
+    gap:1rem;
+  }
+  
 }
 
 @media screen and (max-width: 426px) {
@@ -180,6 +189,13 @@ navbar media query
   .magnify {
     margin-left: 0.5rem;
   }
+  nav .magnify i{
+    font-size: 20px;
+  
+  }
+  nav .icon {
+    gap: 0.8rem;
+}
 }
 
 @media screen and (max-width: 376px) {
@@ -188,15 +204,18 @@ navbar media query
   nav ul .arogya {
     display: none;
   }
+
 }
   /* *************************** */
+
 .section1{
-  padding:1.2rem;
+  padding-top: 1rem;
+  width: 100vw;
 }
   .navigationBar {
     z-index: -1;
     width: 100%;
-    height: 3.5rem;
+    height: 2.5rem;
     background-color: #f4f4f5;
     display: flex;
     align-items: center;
@@ -204,7 +223,7 @@ navbar media query
     color: #707070;
     font-weight: 300;
     position: relative;
-    font-size: 14px;
+    
   }
   
   .navigationBar a ,p{
@@ -212,6 +231,8 @@ navbar media query
     color: #5989bb;
     margin-right: 0.5rem;
     font-weight: 300;
+    font-size: 16px;
+    cursor: pointer;
   }
   .navigationBar span {
     color: #cccdd1;
@@ -336,10 +357,6 @@ navbar media query
     font-weight: 600;
   }
   
-  .latest_invester {
-    padding: 90px;
-  }
-  
   .container_lat_inv {
     display: flex;
     flex-direction: column;
@@ -390,14 +407,16 @@ navbar media query
   
   .latest_lower {
     
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(3,350px);
+    column-gap: 3rem;
     
     width: 100%;
-    padding: 60px 30px;
+    padding: 90px;
   }
   
   .box {
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -419,15 +438,10 @@ navbar media query
     /* box-shadow: 5px 5px 5px rgb(165, 162, 162); */
   
   }
-  .box{
-    display: flex;
-    flex-direction: column;
-    gap:3rem;
-    width: 350px;
-  }
+ 
   
   .boxcontent p {
-    width: 100%;
+    width: 80%;
     font-size: 12px;
     font-size: 300;
     text-align: left;
@@ -479,22 +493,16 @@ navbar media query
     text-align: center;
   }
   @media  (max-width:1024px) {
-    .box{
-      width: 300px;
-    }
     
+    .latest_lower {
+      display: grid;
+      grid-template-columns: repeat(3,300px);
+      column-gap: 2rem;
+     
+      padding: 30px;
   }
-  @media  (max-width:768px) {
-    .latest_invester{
-      grid-template-columns: 1fr;
-      grid-template-rows: repeat(3, 1fr);
-    }
-    .box{
-      width: 400px;
-    }
-    
   }
-  
+
   .also_check {
     padding: 90px;
   }
@@ -548,13 +556,11 @@ navbar media query
   .graphbox{
     transition:opacity 0.4s ease-in-out;
     
-    
-
-    
   }
   .graph:hover > :not(:hover){
-    position: relative;
-    opacity: 0.4s ease-in-out;
+    
+    opacity:0.001;
+    transition: 0.6s ease-in-out;
     
     z-index: 3;
     
@@ -666,7 +672,7 @@ navbar media query
   footer .top {
     display: flex;
     align-items: center;
-    padding-bottom: 4rem;
+    padding: 2rem;
     border-bottom: 0.5px solid #717170;
   }
   footer p {
@@ -733,6 +739,7 @@ navbar media query
     width: 100%;
     justify-content: space-between;
     display: flex;
+    padding: 2rem;
   }
   .bottom .subBottom1 {
     display: flex;
@@ -861,14 +868,16 @@ navbar media query
  .rarrowbutton{
   display: block;
  }
+ .latest_lower {
+  grid-template-columns: 1 350px;
+  grid-template-columns: 400px;
+  /* grid-template-rows: repeat(3,1fr); */
+ padding-left: 184px;
+  row-gap: 4rem;
+  padding-top: 90px;
+}
 
-  
-  .latest_lower {
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(3,1fr);
-    row-gap: 3rem;
 
-  }
   .links{
     column-gap: 1rem;
   }
@@ -878,6 +887,12 @@ navbar media query
   .links {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr 1fr;
+  }
+  .locationIcon{
+    width: 80px;
+  }
+  .address{
+    gap: 0.8rem;
   }
 
   }
@@ -954,9 +969,7 @@ navbar media query
     .li{
       width: 90%;
     }
-  .latest_invester{
-    padding: 60px;
-  }
+
     #gd{
       display: none;
      }
@@ -974,13 +987,19 @@ navbar media query
       grid-template-rows: 1fr 1fr 1fr;
   
     }
-    .latest_lower{
+    .latest_lower {
       align-items: center;
-      margin-left: 3.5rem;
-  
-    }
+      /* padding: 30px; */
+      /* margin-left: 0; */
+      padding-left: 36.5px;
+      grid-template-columns: 350px;
+      padding: 30px 36.5px;
+  }
     .list_meeting{
       margin-left: 2rem;
+    }
+    .latest_invester .box{
+      width: 350px;
     }
     .boxcontent{
       width: 350px;
@@ -995,8 +1014,28 @@ navbar media query
     }
     .graphbox h4{
       font-size: 14px;
+  
+    }
+    /* footer */
+    .address{
+      flex-direction: column;
     }
   }
+  @media screen and (max-width: 375px) {
+    .hero{
+      background-image: url("invester/images/financial-information-375.jpg");
+    }
+    .latest_lower {
+
+      padding-left: 36.5px;
+      grid-template-columns: 300px;
+      padding: 30px;
+  }
+    
+  }
+ 
+
+
   @media screen and (max-width: 1100px){
 
 
