@@ -23,32 +23,487 @@ ul {
   list-style: none;
 }
 header {
-  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
+  width: 100vw;
+  z-index: 999;
 }
+
+a {
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+  z-index: 999;
+}
+
 nav {
+  width: 100vw;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 5rem;
+  padding: 0.5rem 5rem;
+  /* padding: 1.5rem 5rem; */
 }
 
 nav ul {
   display: flex;
-  gap: 1.2rem;
+  align-items: center;
+  
+}
+
+nav img {
+  display: block;
 }
 nav ul a {
-  font-size: 20px;
+  padding: 0px 0.6rem;
+  font-size: 18px;
   font-family: "EB Garamond", serif;
-  font-weight: 500;
+  font-weight: 200;
 }
 
 nav ul .same {
+  /* color: #7E7A77; */
   color: rgba(111, 107, 103, 0.7);
   font-weight: 500;
+}
+nav ul .globe {
+  font-size: 18px;
+}
+
+nav ul .globe span {
+  color: #d1a272;
+  font-size: 24px;
 }
 
 nav ul .arogya {
   font-size: 15px;
+}
+
+nav ul .menu {
+  display: none;
+}
+.glob {
+  height: 24px;
+}
+
+@media screen and (max-width: 1100px) {
+  nav li:hover #Investers {
+    display: none;
+    width: 0;
+    height: 0;
+  }
+}
+nav li #Investers {
+  display: none;
+  width: 0;
+  height: 0;
+}
+
+nav li:hover #Investers {
+  display: block;
+  width: 100%;
+}
+
+#Investers:hover {
+  display: flex;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.section {
+  margin-left: 1.25rem;
+}
+/* .container_invester {
+  padding-top: 5rem;
+  padding-left: 5rem;
+  padding-right: 5rem;
+  padding-bottom: 20px;
+  display: flex;
+  justify-content: space-evenly;
+
+  gap: 3rem;
+} */
+.container_invester a {
+  font-family: "EB Garamond", serif;
+  text-decoration: none;
+  font-size: 15px;
+  color: rgb(112, 112, 112);
+  line-height: 16.5px;
+  padding-top: 10px;
+}
+
+.content {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.content .detail:hover {
+  color: black;
+  transition: all 0.3s ease-in-out;
+}
+.content #one img {
+  display: block;
+  width: 310px;
+  height: 150px;
+}
+.content p {
+  font-family: "Nunito Sans", sans-serif;
+  width: 95%;
+  font-size: 14px;
+  font-weight: 300;
+}
+.content .button {
+  background-color: #d1a272;
+  /* padding-top: 5px;
+    padding-bottom: 5px; */
+  text-align: center;
+  display: block;
+}
+.content .heading {
+  color: rgb(209, 162, 114);
+  font-weight: 500;
+  text-transform: capitalize;
+}
+/* * .section {
+  margin-left: 1.25rem;
+} */
+
+/* newsroom */
+
+.container_newsroom {
+  display: flex;
+  justify-content: space-between;
+
+  gap: 3rem;
+}
+a {
+  text-decoration: none;
+}
+.content {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.content #one img {
+  display: block;
+  width: 310px;
+  height: 150px;
+}
+.content p {
+  font-family: "Nunito Sans", sans-serif;
+  width: 95%;
+  font-size: 14px;
+  font-weight: 300;
+}
+.content .button {
+  background-color: #d1a272;
+  padding: 15px 15px;
+  text-align: center;
+  color: white;
+  font-size: x-large;
+}
+.content .heading {
+  color: rgb(209, 162, 114);
+  font-weight: 500;
+  text-transform: capitalize;
+  font-size: large;
+}
+
+/* about us */
+
+.container_Aboutus,
+.container_ourbrand,
+.container_invester,
+.container_newsroom,
+.container_Ayurveda,
+.container_JoinUs {
+  padding: 3rem 0;
+  padding-bottom: 5rem;
+  display: flex;
+  gap: 3rem;
+  position: absolute;
+  background: white;
+  top: 88px;
+  left: 0;
+  width: 100%;
+}
+#Newsroom {
+  padding-top: 0;
+}
+a {
+  text-decoration: none;
+}
+.content {
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+}
+.content #one img {
+  display: block;
+  width: 310px;
+  height: 150px;
+}
+.content p {
+  font-family: "Nunito Sans", sans-serif;
+  width: 95%;
+  font-size: 17px;
+  font-weight: 300;
+  margin: 5px 5px;
+}
+.content .button {
+  background-color: #d1a272;
+  padding: 15px 15px;
+  text-align: center;
+  color: white;
+  font-size: x-large;
+}
+.content .heading {
+  color: rgb(209, 162, 114);
+  font-weight: 500;
+  text-transform: capitalize;
+  font-size: x-large;
+}
+
+.content .detail {
+  font-size: 16px;
+}
+
+/* ayurveda & you */
+
+/* .container_Ayurveda {
+  padding-top: 4rem;
+  padding-left: 30px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+  display: flex;
+  justify-content: left;
+
+  gap: 3rem;
+} */
+a {
+  text-decoration: none;
+}
+.content {
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+}
+.content #one img {
+  display: block;
+  width: 310px;
+  height: 150px;
+}
+.content p {
+  font-family: "Nunito Sans", sans-serif;
+  width: 95%;
+  font-size: 16px;
+  font-weight: 300;
+  margin: 5px 5px;
+  color: rgb(167, 167, 167);
+  line-height: 19px;
+  letter-spacing: 1px;
+}
+.content .button {
+  background-color: #d1a272;
+  padding: 15px 15px;
+  text-align: center;
+  color: white;
+  font-size: x-large;
+}
+.content .heading {
+  color: rgb(209, 162, 114);
+  font-weight: 500;
+  text-transform: capitalize;
+  font-size: x-large;
+}
+
+.content .detail {
+  font-size: 16px;
+}
+
+/* Join us */
+
+/* .container_JoinUs {
+  padding-top: 4rem;
+  padding-left: 4rem;
+  padding-right: 4rem;
+  padding-bottom: 20px;
+  display: flex;
+  justify-content: left;
+
+  gap: 3rem;
+} */
+a {
+  text-decoration: none;
+}
+.content {
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+}
+.content #one img {
+  display: block;
+  width: 310px;
+  height: 150px;
+}
+.content p {
+  font-family: "Nunito Sans", sans-serif;
+  width: 95%;
+  font-size: 15px;
+
+  margin: 5px 5px;
+  color: rgb(167, 167, 167);
+  line-height: 19px;
+  letter-spacing: 1px;
+}
+.content .button {
+  background-color: #d1a272;
+  padding: 15px 15px;
+  text-align: center;
+  color: white;
+  font-size: x-large;
+}
+.content .heading {
+  color: rgb(209, 162, 114);
+  font-weight: 500;
+  text-transform: capitalize;
+  font-size: large;
+}
+
+.content .detail {
+  font-size: 16px;
+}
+
+/* support  */
+
+/* .container_JoinUs {
+  padding-top: 4rem;
+  padding-left: 4rem;
+  padding-right: 4rem;
+  padding-bottom: 20px;
+  display: flex;
+  justify-content: left;
+
+  gap: 3rem;
+} */
+a {
+  text-decoration: none;
+}
+.content {
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+}
+.content #one img {
+  display: block;
+  width: 310px;
+  height: 150px;
+}
+.content p {
+  font-family: "Nunito Sans", sans-serif;
+  width: 95%;
+  font-size: 15px;
+
+  margin: 5px 5px;
+  color: rgb(167, 167, 167);
+  line-height: 19px;
+  letter-spacing: 1px;
+}
+.content .button {
+  background-color: #d1a272;
+  padding: 15px 15px;
+  text-align: center;
+  color: white;
+  font-size: x-large;
+}
+.content .heading {
+  color: rgb(209, 162, 114);
+  font-weight: 500;
+  text-transform: capitalize;
+  font-size: large;
+}
+
+.content .detail {
+  font-size: 16px;
+}
+
+/* our brand */
+
+/* .container_ourbrand {
+  padding-top: 4rem;
+  padding-left: 4rem;
+  padding-right: 4rem;
+  padding-bottom: 20px;
+  display: flex;
+  justify-content: left;
+
+  gap: 3rem;
+} */
+a {
+  text-decoration: none;
+}
+.content {
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+}
+
+.content .sub {
+  width: 100%;
+  margin-top: 4rem;
+  text-align: left;
+}
+
+.content .digestive {
+  padding-top: 2.7rem;
+}
+
+.content .down {
+  padding-top: 3rem;
+}
+
+.content #one img {
+  display: block;
+  width: 310px;
+  height: 150px;
+}
+.content p {
+  font-family: "Nunito Sans", sans-serif;
+  width: 95%;
+  font-size: 15px;
+
+  margin: 5px 5px;
+  color: rgb(167, 167, 167);
+  line-height: 19px;
+  letter-spacing: 1px;
+}
+.content .button {
+  background-color: #d1a272;
+  padding: 15px 15px;
+  text-align: center;
+  color: white;
+  font-size: x-large;
+}
+.content .heading {
+  color: rgb(209, 162, 114);
+  font-weight: 500;
+  text-transform: capitalize;
+  font-size: large;
+}
+
+.content .detail {
+  font-size: 16px;
+}
+#Investers a {
+  color: #717170;
+}
+#Investers .heading {
+  color: #d1a272;
 }
 
 /* section 1 */
@@ -177,7 +632,7 @@ nav ul .arogya {
 
 .card > img {
   padding-top: 4rem;
-  width: 300px;
+  width: 400px;
   height: 250px;
 }
 
@@ -223,7 +678,7 @@ nav ul .arogya {
   gap: 30px;
   opacity: 0;
   padding-left: 1.5rem;
-  padding-bottom: 1.5rem;
+  padding-bottom: 2.5rem;
 }
 .discoverMore a {
   font-family: "EB Garamond", serif;
@@ -233,7 +688,7 @@ nav ul .arogya {
 
 .cardText {
   padding: 0 1.2rem 1rem;
-  width: 300px;
+  width: 400px;
   color: #707070;
   font-weight: 300;
 }
