@@ -559,7 +559,7 @@ navbar media query
   }
   .graph:hover > :not(:hover){
     
-    opacity:0.001;
+    opacity:0.4;
     transition: 0.6s ease-in-out;
     
     z-index: 3;
